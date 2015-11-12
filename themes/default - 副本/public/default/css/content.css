@@ -1,0 +1,987 @@
+@charset "utf-8";
+*{margin:0; padding:0; border:0; font-family:"微软雅黑";}
+ul,ul li{list-style:none;}
+a,a:hover{text-decoration:none;}
+.con{width:100%; height:auto;}
+
+
+/*2015-6-2  add  唐小莉  注册页面*/
+.registerCon{width:1280px; height:auto; margin:60px auto;}
+.registerCon:after{content:" "; display:block; clear:both;}
+.registerConLeft{width:565px; height:auto; float:left; margin-right:105px;}
+.registerConLeft p{line-height:50px; font-size:16px; color:#333;}
+.registerConLeft p a{color:#333;}
+.registerConLeft p a:hover{color:#0aa39a;}
+.registerConLeft a img{width:563px; height:365px; border:1px solid #0aa39a;}
+.registerConRight{width:608px; height:auto; float:left; border:1px solid #ccc; margin-top:50px;}
+.registerConRight h3{width:508px; height:40px; line-height:40px; font-size:18px; background:#ddd; padding:0 50px; color:#333;}
+.registerConRight h3 span{font-size:14px; padding-left:10%;}
+.registerConRight h3 span a{color:#0aa39a;}
+.registerConRight ul{width:508px; height:auto; margin:30px 50px;}
+.registerConRight ul li{width:508px; height:auto;}
+.registerConRight ul li p{width:508px; height:35px; line-height:35px; font-size:14px; color:#333;}
+.registerConRight ul li p b{color:red; padding-right:6px; position:relative; top:3px;}
+.registerConRight ul li input{width:290px; height:30px; padding:0 30px 0 10px; border:1px solid #ddd; outline:none; line-height:30px;}
+.registerConRight ul li input[type="password"]{background:url(../images/password.png) right center no-repeat;}
+.registerConRight ul li input[type="text"]{background:url(../images/user.png) right center no-repeat;}
+.registerConRight ul li input[type="tel"]{background:url(../images/phone.png) right center no-repeat;}
+.registerConRight ul li input.test{width:120px; height:30px; position:relative; top:8px; left:0; background:none;}
+.registerConRight ul li a img{width:95px; height:30px; position:relative; top:21px; left:15px;}
+.registerConRight ul li span{font-size:14px; color:#f27510;}
+.registerConRight ul li.identifyingCode input[type="text"]{width:128px; margin-right:20px; background:none;}
+.registerConRight ul li.identifyingCode input[type="button"]{width:138px; padding:0; height:30px; border:1px solid #ddd; border-radius:3px; cursor:pointer;}
+.registerConRight ul li .selected{width:16px; height:16px; margin-top:25px; padding:0;}
+.registerConRight ul li a{font-size:14px; color:#333; line-height:14px; position:relative; bottom:3px;}
+.registerConRight ul li a:hover{color:#0aa39a;}
+.registerConRight ul li .registerBtn{width:330px; height:35px; font-size:18px; line-height:35px; font-weight:bold; color:#fff; letter-spacing:5px; margin-top:18px; background:#0aa39a; border:0; cursor:pointer;}
+
+@media screen and (max-width:1024px){
+.registerCon{width:900px;}
+.registerConLeft{width:380px; margin-right:50px;}
+.registerConLeft a img{width:378px;}
+.registerConRight{width:468px;}
+.registerConRight h3{width:368px;}
+.registerConRight ul{width:428px; margin:30px 20px;}
+.registerConRight ul li{width:428px;}
+.registerConRight ul li p{width:428px;}
+.registerConRight ul li input{width:248px;}
+.registerConRight ul li.identifyingCode input[type="text"]{width:118px; margin-right:18px;}
+.registerConRight ul li.identifyingCode input[type="button"]{width:108px;}
+.registerConRight ul li .registerBtn{width:290px;}
+}
+/*2015-6-2  add  唐小莉  注册页面*/
+
+
+/*2015-6-2  add  唐小莉  登陆页面*/
+.loginCon{width:1280px; height:auto; margin:60px auto;}
+.loginCon:after{content:" "; display:block; clear:both;}
+.loginConLeft{width:565px; height:auto; float:left; margin-right:105px;}
+.loginConLeft p{line-height:50px; font-size:16px; color:#333;}
+.loginConLeft p a{color:#333;}
+.loginConLeft p a:hover{color:#0aa39a;}
+.loginConLeft a img{width:563px; height:365px; border:1px solid #0aa39a;}
+.loginConRight{width:608px; height:365px; float:left; border:1px solid #ccc; margin-top:50px;}
+.loginConRight h3{width:508px; height:40px; line-height:40px; font-size:18px; background:#ddd; padding:0 50px; color:#333;}
+.loginConRight h3 span{font-size:14px; padding-left:10%;}
+.loginConRight h3 span a{color:#0aa39a;}
+.loginConRight ul{width:358px; height:auto; margin:15px auto;}
+.loginConRight ul li{width:358px; height:auto;}
+.loginConRight ul li p{width:358px; height:35px; line-height:35px; font-size:14px; color:#333;}
+.loginConRight ul li p b{color:red; padding-right:6px; position:relative; top:3px;}
+.loginConRight ul li input{width:290px; height:30px; padding:0 30px 0 10px; border:1px solid #ddd; outline:none; line-height:30px;}
+.loginConRight ul li input[type="password"]{background:url(../images/password.png) right center no-repeat;}
+.loginConRight ul li input[type="text"]{background:url(../images/user.png) right center no-repeat;}
+.loginConRight ul li span{font-size:14px; width:330px; line-height:21px; color:#f27510; display:block; text-align:right;}
+.loginConRight ul li.identifyingCode input[type="text"]{width:128px; margin-right:20px; background:none;}
+.loginConRight ul li.identifyingCode input[type="button"]{width:138px; padding:0; height:30px; border:1px solid #ddd; border-radius:3px; cursor:pointer;}
+.loginConRight ul li input.test{width:120px; height:30px; position:relative; top:8px; left:0; background:none; padding:0 10px;}
+.loginConRight ul li .selected{width:16px; height:16px; margin-top:25px; padding:0;}
+.loginConRight ul li a img{width:95px; height:30px; position:relative; top:21px; left:0px;}
+.loginConRight ul li a{font-size:14px; color:#333; line-height:14px; position:relative; bottom:3px;}
+.loginConRight ul li i{font-size:14px; color:#333; line-height:14px; position:relative; bottom:3px; font-style:normal; padding-right:20px;}
+.loginConRight ul li .loginBtn{width:330px; height:35px; font-size:18px; line-height:35px; font-weight:bold; color:#fff; letter-spacing:5px; margin-top:12px; background:#0aa39a; border:0; cursor:pointer;}
+
+@media screen and (max-width:1024px){
+.loginCon{width:900px;}
+.loginConLeft{width:380px; margin-right:50px;}
+.loginConLeft a img{width:378px;}
+.loginConRight{width:468px;}
+.loginConRight h3{width:368px;}
+}
+
+
+/*2015-6-3  add  唐小莉  个人中心*/
+.userCon{width:1200px; height:auto; margin:60px auto;}
+.userCon:after{content:" "; display:block; clear:both;}
+/*2015-6-3  add  唐小莉  个人中心导航菜单*/
+.userNavList{width:200px; height:auto; float:left; background:#f6f6f6; margin-right:60px;}
+.userNavList dl{width:200px; height:auto;}
+.userNavList dl dd{width:200px; height:40px; line-height:40px; text-align:left; border-bottom:1px dotted #ddd;}
+.userNavList dl dt{width:130px; height:40px; line-height:40px; padding:0 35px; font-size:15px; font-weight:bold; color:#000; background:#ccc;}
+.userNavList dl dd a{width:130px; height:40px; display:block; padding:0 35px; font-size:14px; color:#666; overflow:hidden;}
+.userNavList dl dd:hover a,.userNavList dl dd.on a{background:#ddd; color:#0aa39a;}
+/*2015-6-3  add  唐小莉  （订单页面）*/
+.userOrder{width:940px; height:auto; float:left;}
+.userOrder > div{width:940px; height:auto; margin:100px 0 0 50px; font-size:15px; font-weight:bold;}
+.userOrder > div a{padding:0 5px; text-decoration:underline; color:#0aa39a;}
+.userOrder > p{width:940px; height:40px; line-height:40px; font-size:14px; color:#333;}
+.userOrder > p a{color:#333;}
+.userOrder > p a:hover{color:#0aa39a;}
+.userOrder h4{font-size:18px; line-height:30px; color:#333; padding:5px 0 25px 20px;}
+.userOrder ul.userOrderList{width:900px; height:auto; margin:0 20px; background:#ddd;}
+.userOrder ul:after{content:" "; display:block; clear:both;}
+.userOrder ul.userOrderList li{float:left; height:40px;}
+.userOrder ul.userOrderList li:nth-last-child(1){width:107px;}
+.userOrder ul.userOrderList li:nth-last-child(2){width:106px;}
+.userOrder ul.userOrderList li:nth-last-child(3){width:76px;}
+.userOrder ul.userOrderList li:nth-last-child(4){width:76px;}
+.userOrder ul.userOrderList li:nth-last-child(5){width:101px;}
+.userOrder ul.userOrderList li:nth-last-child(6){width:121px;}
+.userOrder ul.userOrderList li:nth-last-child(7){width:186px;}
+.userOrder ul.userOrderList li:nth-last-child(8){width:126px;}
+.userOrder ul.userOrderList li h5{font-size:14px; color:#333; line-height:40px; text-align:center;}
+
+.userOrder ul.userOrderInfo{width:900px; height:auto; margin:0 20px;}
+.userOrder ul:after{content:" "; display:block; clear:both;}
+.userOrder ul.userOrderInfo li{float:left; height:65px; text-align:center; border-left:1px solid #ddd; border-bottom:1px solid #ddd;}
+.userOrder ul.userOrderInfo li:nth-last-child(1){width:106px; border-right:1px solid #ddd;}
+.userOrder ul.userOrderInfo li:nth-last-child(2){width:105px;}
+.userOrder ul.userOrderInfo li:nth-last-child(3){width:75px;}
+.userOrder ul.userOrderInfo li:nth-last-child(4){width:75px;}
+.userOrder ul.userOrderInfo li:nth-last-child(5){width:100px;}
+.userOrder ul.userOrderInfo li:nth-last-child(6){width:120px;}
+.userOrder ul.userOrderInfo li:nth-last-child(7){width:177px; text-align:left; padding-left:8px;}
+.userOrder ul.userOrderInfo li:nth-last-child(8){width:125px;}
+.userOrder ul.userOrderInfo li span{font-size:13px; color:#333; line-height:65px;}
+.userOrder ul.userOrderInfo li p{font-size:13px; color:#333; line-height:20px; padding-top:13px;}
+.userOrder ul.userOrderInfo li b{font-size:13px; font-weight:normal; color:#0aa39a; line-height:65px;}
+.userOrder ul.userOrderInfo li img{padding-top:6px;}
+.userOrder ul.userOrderInfo li a{font-size:13px; color:#333; line-height:65px;}
+.userOrder ul.userOrderInfo li a:hover{color:red;}
+.userOrder ul.userOrderInfo li a:first-child{padding-right:6px;}
+.userOrder ul.userOrderInfo li a:nth-last-child(2){padding-right:4px;}
+/*2015-6-3  add  唐小莉  （订单页面）*/
+
+/*2015-6-3  add  唐小莉  我的优惠券*/
+.coupon{width:940px; height:auto; float:left;}
+.coupon > span{width:940px; height:auto; display:block; margin:50px 0 0 50px; font-size:15px; font-weight:bold;}
+.coupon > p{width:940px; height:40px; line-height:40px; font-size:14px; color:#333;}
+.coupon > p a{color:#333;}
+.coupon > p a:hover{color:#0aa39a;}
+.coupon h4{font-size:18px; line-height:30px; color:#333; padding:5px 0 20px 20px;}
+.coupon .couponCon{width:900px; height:auto; margin:0 20px 20px;}
+.coupon .couponCon b{font-size:15px; font-weight:normal; display:block;}
+.coupon .couponCon p{width:900px; height:30px; margin:12px 0;}
+.coupon .couponCon p input[type="text"]{width:250px; height:30px; border:1px solid #ccc; padding:0 10px; line-height:30px; outline:none;}
+.coupon .couponCon p input[type="button"]{width:180px; height:30px; line-height:30px; outline:none; text-align:center; background:#0aa39a; color:#fff; border-radius:5px; margin-left:10px; font-weight:bold; cursor:pointer; font-size:15px; letter-spacing:1px;}
+.coupon .couponCon span{font-size:13px; color:#333;}
+
+.coupon ul.couponList{width:900px; height:auto; margin:0 20px; background:#ddd;}
+.coupon ul:after{content:" "; display:block; clear:both;}
+.coupon ul.couponList li{float:left; height:40px;}
+/* .coupon ul.couponList li:nth-last-child(1){width:300px;}
+.coupon ul.couponList li:nth-last-child(2){width:300px;}
+.coupon ul.couponList li:nth-last-child(3){width:200px;} */
+
+.coupon ul.couponList li:nth-last-child(1){width:225px;}
+.coupon ul.couponList li:nth-last-child(2){width:320px;}
+.coupon ul.couponList li:nth-last-child(3){width:125px;}
+.coupon ul.couponList li:nth-last-child(4){width:225px;}
+
+.coupon ul.couponList li h5{font-size:14px; color:#333; line-height:40px; text-align:center;}
+
+.coupon ul.couponInfo{width:900px; height:auto; margin:0 20px;}
+.coupon ul:after{content:" "; display:block; clear:both;}
+.coupon ul.couponInfo li{float:left; height:50px; text-align:center; border-left:1px solid #ddd; border-bottom:1px solid #ddd; overflow:hidden;}
+/* .coupon ul.couponInfo li:nth-last-child(1){width:298px; border-right:1px solid #ddd;}
+.coupon ul.couponInfo li:nth-last-child(2){width:299px;}
+.coupon ul.couponInfo li:nth-last-child(3){width:200px;} */
+.coupon ul.couponInfo li:nth-last-child(1){width:224px; border-right:1px solid #ddd;}
+.coupon ul.couponInfo li:nth-last-child(2){width:320px; padding-top:5px; height:45px;}
+.coupon ul.couponInfo li:nth-last-child(2) span.couponInfo-child{line-height:19px; font-size:12px;}
+.coupon ul.couponInfo li:nth-last-child(3){width:124px;}
+.coupon ul.couponInfo li:nth-last-child(4){width:224px;}
+
+.coupon ul.couponInfo li span{font-size:13px; color:#333; line-height:50px;}
+
+/*2015-6-3  add  唐小莉  编辑账户*/
+.editAccount{width:900px; height:auto; float:left; margin-left:40px;}
+.editAccount > p{width:900px; height:40px; line-height:40px; font-size:14px; color:#333; background:#f6f6f6;}
+.editAccount > p a{color:#333;}
+.editAccount > p a:hover{color:#0aa39a;}
+.editAccount h4{font-size:18px; line-height:30px; color:#333; padding:5px 0 25px 20px;}
+.editAccount ul{width:860px; height:auto; margin:0 20px;}
+.editAccount ul li{width:860px; height:auto;}
+.editAccount ul li p{font-size:14px; line-height:40px; color:#333;}
+.editAccount ul li p b{color:red; position:relative; top:3px; padding-right:6px;}
+.editAccount ul li input{width:320px; height:30px; border:1px solid #ccc; padding:0 10px; outline:none;}
+.editAccount ul li span{font-size:14px; color:#f27510; padding-left:6px;}
+.editAccount ul li input[type="button"]{width:342px; height:30px; background:#0aa39a; text-align:center; line-height:25px; font-size:15px; font-weight:bold; color:#fff; margin-top:50px; border:0; cursor:pointer; letter-spacing:5px;}
+/*2015-6-3  add  唐小莉  编辑账户*/
+
+
+/*2015-6-3  add  唐小莉  修改密码*/
+.amendedPassword{width:900px; height:auto; float:left; margin-left:40px;}
+.amendedPassword > p{width:900px; height:40px; line-height:40px; font-size:14px; color:#333; background:#f6f6f6;}
+.amendedPassword > p a{color:#333;}
+.amendedPassword > p a:hover{color:#0aa39a;}
+.amendedPassword h4{font-size:18px; line-height:30px; color:#333; padding:5px 0 25px 20px;}
+.amendedPassword ul{width:860px; height:auto; margin:0 20px;}
+.amendedPassword ul li{width:860px; height:auto;}
+.amendedPassword ul li p{font-size:14px; line-height:40px; color:#333;}
+.amendedPassword ul li p b{color:red; position:relative; top:3px; padding-right:6px;}
+.amendedPassword ul li input{width:320px; height:30px; border:1px solid #ccc; padding:0 10px; outline:none;}
+.amendedPassword ul li span{font-size:14px; color:#f27510; padding-left:6px;}
+.amendedPassword ul li input[type="button"]{width:342px; height:30px; background:#0aa39a; text-align:center; line-height:25px; font-size:15px; font-weight:bold; color:#fff; margin-top:50px; border:0; cursor:pointer; letter-spacing:5px;}
+/*2015-6-3  add  唐小莉  修改密码*/
+
+/*2015-6-3  add  唐小莉  修改手机号码*/
+.amendedPhone{width:900px; height:auto; float:left; margin-left:40px;}
+.amendedPhone > p{width:900px; height:40px; line-height:40px; font-size:14px; color:#333; background:#f6f6f6;}
+.amendedPhone > p a{color:#333;}
+.amendedPhone > p a:hover{color:#0aa39a;}
+.amendedPhone h4{font-size:18px; line-height:30px; color:#333; padding:5px 0 25px 20px;}
+.amendedPhone ul{width:860px; height:auto; margin:0 20px;}
+.amendedPhone ul li{width:860px; height:auto;}
+.amendedPhone ul li p{font-size:14px; line-height:40px; color:#333;}
+.amendedPhone ul li p b{color:red; position:relative; top:3px; padding-right:6px;}
+.amendedPhone ul li input{width:320px; height:30px; border:1px solid #ccc; padding:0 10px; outline:none;}
+.amendedPhone ul li:nth-child(2n) input[type="text"]{width:160px; margin-right:20px;}
+.amendedPhone ul li:nth-child(2n) input[type="button"]{width:110px; border-radius:5px; cursor:pointer;}
+.amendedPhone ul li span{font-size:14px; color:#f27510; padding-left:6px;}
+.amendedPhone ul li input.amendedBtn{width:342px; height:30px; background:#0aa39a; text-align:center; line-height:25px; font-size:15px; font-weight:bold; color:#fff; margin-top:50px; border:0; cursor:pointer; letter-spacing:5px;}
+/*2015-6-3  add  唐小莉  修改手机号码*/
+
+@media screen and (max-width:1024px){
+.userCon{width:900px;}
+
+/*2015-6-3  add  唐小莉  个人中心导航菜单*/
+.userNavList{width:160px; height:auto; float:left; background:#f6f6f6; margin-right:30px;}
+.userNavList dl{width:160px; height:auto;}
+.userNavList dl dd{width:160px; height:40px; line-height:40px; text-align:left; border-bottom:1px dotted #ddd;}
+.userNavList dl dt{width:120px; height:40px; line-height:40px; padding:0 20px; font-size:15px; font-weight:bold; color:#000; background:#ccc;}
+.userNavList dl dd a{width:120px; height:40px; display:block; padding:0 20px; font-size:14px; color:#666; overflow:hidden;}
+.userNavList dl dd:hover a,.userNavList dl dd.on a{background:#ddd; color:#0aa39a;}
+
+.userOrder h4{padding:5px 0 25px 10px;}
+
+/*2015-6-3  add  唐小莉  （订单页面）*/
+.userOrder{width:710px; position:relative;}
+.userOrder > div{width:600px;}
+.userOrder > p{width:710px;}
+.userOrder h4{padding:5px 0 25px 10px;}
+.userOrder ul.userOrderList{width:710px; margin:0;}
+.userOrder ul.userOrderList li:nth-last-child(1){width:100px;}
+.userOrder ul.userOrderList li:nth-last-child(2){width:80px;}
+.userOrder ul.userOrderList li:nth-last-child(3){width:60px;}
+.userOrder ul.userOrderList li:nth-last-child(4){width:70px;}
+.userOrder ul.userOrderList li:nth-last-child(5){width:91px;}
+.userOrder ul.userOrderList li:nth-last-child(6){width:61px;}
+.userOrder ul.userOrderList li:nth-last-child(7){width:127px;}
+.userOrder ul.userOrderList li:nth-last-child(8){width:121px;}
+
+.userOrder ul.userOrderInfo{width:710px; margin:0;}
+.userOrder ul.userOrderInfo li:nth-last-child(1){width:98px;}
+.userOrder ul.userOrderInfo li:nth-last-child(2){width:79px;}
+.userOrder ul.userOrderInfo li:nth-last-child(3){width:59px;}
+.userOrder ul.userOrderInfo li:nth-last-child(4){width:69px;}
+.userOrder ul.userOrderInfo li:nth-last-child(5){width:90px;}
+.userOrder ul.userOrderInfo li:nth-last-child(6){width:60px;}
+.userOrder ul.userOrderInfo li:nth-last-child(7){width:118px; overflow:hidden;}
+.userOrder ul.userOrderInfo li:nth-last-child(8){width:120px;}
+.userOrder ul.userOrderInfo li a:first-child{padding-right:1px;}
+.userOrder ul.userOrderInfo li a:nth-last-child(2){padding-right:1px;}
+/*2015-6-3  add  唐小莉  （订单页面）*/
+
+/*2015-6-3  add  唐小莉  我的优惠券*/
+.coupon{width:710px;}
+.coupon > span{width:600px;}
+.coupon > p{width:710px;}
+.coupon h4{padding:5px 0 20px 10px;}
+.coupon .couponCon{width:690px; margin:0 10px 20px;}
+.coupon .couponCon p{width:690px;}
+
+.coupon ul.couponList{width:690px; margin:0 10px;}
+.coupon ul.couponList li:nth-last-child(1){width:172px;}
+.coupon ul.couponList li:nth-last-child(2){width:242px;}
+.coupon ul.couponList li:nth-last-child(3){width:103px;}
+.coupon ul.couponList li:nth-last-child(4){width:173px;}
+
+.coupon ul.couponInfo{width:690px; margin:0 10px;}
+.coupon ul.couponInfo li:nth-last-child(1){width:170px; border-right:1px solid #ddd;}
+.coupon ul.couponInfo li:nth-last-child(2){width:241px; padding-top:5px; height:45px;}
+.coupon ul.couponInfo li:nth-last-child(2) span.couponInfo-child{line-height:20px; font-size:12px;}
+.coupon ul.couponInfo li:nth-last-child(3){width:102px;}
+.coupon ul.couponInfo li:nth-last-child(4){width:172px;}
+
+/*2015-6-3  add  唐小莉  编辑账户*/
+.editAccount{width:670px;}
+.editAccount > p{width:630px; padding:0 20px;}
+.editAccount ul{width:630px;}
+.editAccount ul li{width:630px;}
+/*2015-6-3  add  唐小莉  编辑账户*/
+
+/*2015-6-3  add  唐小莉  修改密码*/
+.amendedPassword{width:670px;}
+.amendedPassword > p{width:630px; padding:0 20px;}
+.amendedPassword ul{width:630px;}
+.amendedPassword ul li{width:630px;}
+/*2015-6-3  add  唐小莉  修改密码*/
+
+/*2015-6-3  add  唐小莉  修改手机号码*/
+.amendedPhone{width:670px;}
+.amendedPhone > p{width:630px; padding:0 20px;}
+.amendedPhone ul{width:630px;}
+.amendedPhone ul li{width:630px;}
+/*2015-6-3  add  唐小莉  修改手机号码*/
+}
+/*2015-6-3  add  唐小莉  个人中心*/
+
+
+/*2015-6-4  add  唐小莉  订单详情*/
+/*2015-6-4  add  唐小莉  订单状态*/
+.userOrder .orderState{width:920px; height:auto; margin:0; margin-left:20px;}
+.userOrder .orderState p{width:840px; height:40px; background:#ddd; font-size:15px; line-height:40px; padding:0 40px;}
+.userOrder .orderState ul{width:918px; height:80px; border:1px solid #ccc;}
+.userOrder .orderState ul:after{content:" "; display:block; clear:both;}
+.userOrder .orderState ul li{width:184px; height:40px; float:left; margin:20px 8px;}
+.userOrder .orderState ul li:first-child{margin-left:159px;}
+.userOrder .orderState ul li img{width:184px; height:25px;}
+.userOrder .orderState ul li span{width:184px; height:15px; display:block; font-size:14px; text-align:center; line-height:15px; color:#333;}
+/*2015-6-4  add  唐小莉  订单详情*/
+.userOrder .orderInfo{width:920px; height:auto; margin:25px 0 25px 20px;}
+.userOrder .orderInfo p{width:840px; height:40px; background:#ddd; font-size:15px; line-height:40px; padding:0 40px;}
+.userOrder .orderInfo ul{width:918px; height:64px; border:1px solid #ccc;}
+.userOrder .orderInfo ul:after{content:" "; display:block; clear:both;}
+.userOrder .orderInfo ul li{width:458px; height:64px; float:left;}
+.userOrder .orderInfo ul li:first-child{border-right:1px solid #ccc;}
+.userOrder .orderInfo ul li:first-child span{line-height:22px;}
+.userOrder .orderInfo ul li span{width:398px; display:block; margin-left:30px; font-size:14px; line-height:64px; color:#333;}
+/*2015-6-4  add  唐小莉  订单列表*/
+.userOrder .usergoodsInfo{width:920px; height:auto; margin:0; margin-left:20px;}
+.userOrder .usergoodsInfo > p{font-size:15px; font-weight:bold; line-height:50px;}
+.userOrder .usergoodsInfo ul.userGoodsName{width:920px; height:auto; background:#ddd;}
+.userOrder .usergoodsInfo ul:after{content:" "; display:block; clear:both;}
+.userOrder .usergoodsInfo ul.userGoodsName li{float:left; height:40px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(1){width:119px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(2){width:116px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(3){width:116px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(4){width:116px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(5){width:301px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(6){width:151px;}
+.userOrder .usergoodsInfo ul.userGoodsName li h5{font-size:14px; color:#333; line-height:40px; text-align:center;}
+
+.userOrder .usergoodsInfo ul.userGoodsList{width:920px; height:auto;}
+.userOrder .usergoodsInfo ul:after{content:" "; display:block; clear:both;}
+.userOrder .usergoodsInfo ul.userGoodsList li{float:left; height:65px; text-align:center; border-left:1px solid #ddd; border-bottom:1px solid #ddd;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(1){width:118px; border-right:1px solid #ddd;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(2){width:115px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(3){width:115px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(4){width:115px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(5){width:300px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(6){width:150px;}
+.userOrder .usergoodsInfo ul.userGoodsList li span{font-size:13px; color:#333; line-height:65px; font-weight:normal;}
+.userOrder .usergoodsInfo ul.userGoodsList li img{padding-top:6px;}
+.userOrder .usergoodsInfo ul.userGoodsList li a{font-size:13px; color:#333; line-height:65px; text-decoration:none; font-weight:normal;}
+.userOrder .usergoodsInfo ul.userGoodsList li a:hover{color:red;}
+.userOrder .usergoodsInfo ul.userGoodsList li a:first-child{padding-right:10px;}
+/*2015-6-4  add  唐小莉  订单金额合计*/
+.userOrder .orderTotal{width:920px; height:auto; margin:25px 0 25px 20px;}
+.userOrder .orderTotal p{width:920px; height:40px; background:#ddd; font-size:15px; line-height:40px;}
+.userOrder .orderTotal p:after{content:" "; display:block; clear:both;}
+.userOrder .orderTotal p span{width:398px; height:40px; display:block; float:left; margin:0 30px; text-align:center;}
+.userOrder .orderTotal p span:first-child{text-align:right;}
+.userOrder .orderTotal ul{width:918px; height:64px; border:1px solid #ccc;}
+.userOrder .orderTotal ul:after{content:" "; display:block; clear:both;}
+.userOrder .orderTotal ul li{width:458px; height:64px; float:left;}
+.userOrder .orderTotal ul li:first-child{border-right:1px solid #ccc; text-align:right;}
+.userOrder .orderTotal ul li:first-child span{text-align:right;}
+.userOrder .orderTotal ul li span{width:398px; display:block; margin-left:30px; font-size:14px; line-height:64px; color:#333; text-align:center;}
+
+@media screen and (max-width:1024px){
+.userOrder .orderState{width:690px; margin:0 10px;}
+.userOrder .orderState p{width:650px; padding:0 20px;}
+.userOrder .orderState ul{width:688px;}
+.userOrder .orderState ul li{width:184px; height:40px; float:left; margin:20px 8px;}
+.userOrder .orderState ul li:first-child{margin-left:60px;}
+/*2015-6-4  add  唐小莉  订单详情*/
+.userOrder .orderInfo{width:690px; margin:25px 10px;}
+.userOrder .orderInfo p{width:650px; padding:0 20px;}
+.userOrder .orderInfo ul{width:688px;}
+.userOrder .orderInfo ul li{width:343px;}
+.userOrder .orderInfo ul li span{width:323px; margin-left:20px;}
+/*2015-6-4  add  唐小莉  订单列表*/
+.userOrder .usergoodsInfo{width:690px; margin:0 10px;}
+.userOrder .usergoodsInfo ul.userGoodsName{width:690px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(1){width:90px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(2){width:90px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(3){width:90px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(4){width:90px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(5){width:240px;}
+.userOrder .usergoodsInfo ul.userGoodsName li:nth-last-child(6){width:90px;}
+
+.userOrder .usergoodsInfo ul.userGoodsList{width:690px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(1){width:88px; border-right:1px solid #ddd;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(2){width:89px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(3){width:89px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(4){width:89px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(5){width:239px;}
+.userOrder .usergoodsInfo ul.userGoodsList li:nth-last-child(6){width:89px;}
+/*2015-6-4  add  唐小莉  订单金额合计*/
+.userOrder .orderTotal{width:690px;  margin:25px 10px;}
+.userOrder .orderTotal p{width:690px;}
+.userOrder .orderTotal p span{width:285px;}
+.userOrder .orderTotal p span:first-child{text-align:right;}
+.userOrder .orderTotal ul{width:688px;}
+.userOrder .orderTotal ul li{width:343px;}
+.userOrder .orderTotal ul li span{width:293px; margin:0 25px;}
+}
+
+/*2015-6-4  add  唐小莉  订单详情*/
+
+
+
+/*2015-6-4  add  唐小莉  商品列表页*/
+.goodsCon{width:1300px; height:auto; margin:30px auto;}
+.goodsCon > form{width:525px; height:32px; margin:0 auto 20px;}
+.goodsCon > form input[type="text"]{width:394px; height:30px; border:1px solid #ccc; border-right:0; padding:0 10px; line-height:30px; outline:none;}
+.goodsCon > form input[type="button"]{width:110px; height:32px; line-height:25px; outline:none; background:#0aa39a; color:#fff; font-size:15px; font-weight:bold; letter-spacing:5px; cursor:pointer;}
+.goodsCon .goodsConList{width:1300px; height:auto; background:#f6f6f6;}
+.goodsCon .goodsConList p{width:1220px; height:50px; margin:0 40px; line-height:50px; font-size:14px; color:#333;}
+.goodsCon .goodsConList p a{color:#333;}
+.goodsCon .goodsConList p a:hover{color:#0aa39a;}
+.goodsCon .goodsConList .goodsListCategory{width:1140px; height:35px; margin:10px auto; overflow:hidden;}
+.goodsCon .goodsConList .goodsListCategory:after{content:" "; display:block; clear:both;}
+.goodsCon .goodsConList .goodsListCategory span{width:85px; height:35px; display:block; float:left; background:#f27510; font-size:18px; text-align:center; line-height:35px; color:#fff; margin-right:30px;}
+.goodsCon .goodsConList .goodsListCategory a{width:85px; height:15px; display:block; float:left; border-right:2px solid #f27510; font-size:15px; text-align:center; line-height:15px; color:#333; margin-top:10px;}
+.goodsCon .goodsConList .goodsListCategory a:last-child{border-right:0;}
+.goodsCon .goodsConList .goodsListCategory a:hover,.goodsCon .goodsConList .goodsListCategory a.goodsListSelected{color:#f27510;}
+.goodsCon .goodsConList ul{width:1226px; height:auto; margin:0 auto;}
+.goodsCon .goodsConList ul:after{content:" "; display:block; clear:both;}
+.goodsCon .goodsConList ul li{width:220px; height:285px; float:left; margin:25px 43px;}
+.goodsCon .goodsConList ul li img{width:220px; height:220px;}
+.goodsCon .goodsConList ul li p{width:220px; height:35px; font-size:13px; line-height:35px; margin:0;}
+.goodsCon .goodsConList ul li p:after{content:" "; display:block; clear:both;}
+.goodsCon .goodsConList ul li p span{width:150px; height:35px; display:block; overflow:hidden; float:left; white-space:nowrap; text-overflow:ellipsis;}
+.goodsCon .goodsConList ul li p b{width:70px; height:35px; display:block; overflow:hidden; float:left; color:#F03; text-align:center; font-size:14px;}
+.goodsCon .goodsConList ul li i{width:220px; height:30px;}
+.goodsCon .goodsConList ul li i:after{content:" "; display:block; clear:both;}
+.goodsCon .goodsConList ul li i a{width:80px; height:30px; display:block; float:left; background:#0aa39a; color:#fff; line-height:30px; text-align:center; margin:0 15px; font-style:normal; font-size:14px; border-radius:5px;}
+/*2015-6-4  add  唐小莉  分页*/
+.goodsCon .goodsConList .page{width:1140px; height:28px; margin:40px auto; text-align:right; padding-bottom:20px;}
+.goodsCon .goodsConList .page p{width:1140px; height:28px; display:block; margin:0; line-height:28px;}
+.goodsCon .goodsConList .page p a{font-size:15px; padding:3px 12px; border:1px solid #ccc; color:#333; background:#fff;}
+.goodsCon .goodsConList .page p a.pageSlected{background:#0aa39a; color:#fff; border:0; padding:4px 13px;}
+.goodsCon .goodsConList .page p a:hover{background:#0aa39a; color:#fff; border:0; padding:4px 13px;}
+.goodsCon .goodsConList .page p span{padding:0 8px;}
+/*2015-6-4  add  唐小莉  商品列表页*/
+
+
+/*2015-6-4  add  唐小莉  商品详情页*/
+.goodsInfo{width:1150px; height:auto; background:#f6f6f6; margin:40px auto; padding-bottom:30px}
+.goodsInfo > p{width:1050px; height:50px; margin:0 auto; line-height:50px; font-size:14px; color:#333;}
+.goodsInfo > p a{color:#333;}
+.goodsInfo > p a:hover{color:#0aa39a;}
+.goodsInfo > ul{width:1050px; height:410px; margin:0 auto;}
+.goodsInfo > ul:after{content:" "; display:block; clear:both;}
+.goodsInfo > ul li{width:485px; height:410px; float:left;}
+.goodsInfo > ul li:nth-last-child(2){width:485px;}
+.goodsInfo > ul li:nth-last-child(1){width:515px; margin-left:50px;}
+.goodsInfo > ul li img{width:485px; height:405px; box-shadow:3px 3px 5px #999; -webkit-box-shadow:3px 3px 5px #999; -moz-box-shadow:3px 3px 5px #999; -ms-box-shadow:3px 3px 5px #999; -o-box-shadow:3px 3px 5px #999;}
+.goodsInfo > ul li h3{width:485px; height:40px; background:#0aa39a; color:#fff; padding:0 15px; font-size:18px; line-height:40px; overflow:hidden; margin-bottom:30px;}
+.goodsInfo > ul li p{width:455px; height:35px; display:block; padding:0 30px; font-size:15px; font-weight:bold; line-height:35px;}
+.goodsInfo > ul li b{width:455px; height:48px; display:block; padding:25px 30px; font-size:48px; line-height:48px; color:red;}
+.goodsInfo > ul li > i{width:455px; height:35px; display:block; padding:0 30px; font-size:15px; font-weight:bold; line-height:35px; font-style:normal;}
+.goodsInfo > ul li > i a{width:135px; height:35px; float:left; display:block; background:#0aa39a; color:#fff; text-align:center; border-radius:5px; margin:30px 80px 0 0;}
+/*2015-6-4  add  唐小莉  商品加减*/
+.goodsInfo > ul li p u{float:left; text-decoration:none;}
+.Spinner{display:block; overflow:hidden; width:100px; position:relative; top:4px;}
+.Spinner .Amount{width:36px;height:17px;padding:4px 5px;line-height:17px;border-width:1px 0;border-style:solid;border-color:#d9d9d9;float:left;text-align:center;color:#565656;outline:0;}
+.Spinner a{display:inline-block;width:25px;height:25px;border:1px solid #d9d9d9;background-color:#f7f7f7;float:left;cursor:pointer;outline:0;}
+.Spinner a i{font-style:normal;background:url(../images/BuynBtn.png) no-repeat;display:block;width:9px;height:9px;margin:8px;text-indent:999999%;overflow:hidden;}
+.Spinner .Decrease i{background-position:-9px -9px;}
+.Spinner .Increase i{background-position:-9px -0px;}
+.Spinner .DisDe i{background-position:-0px -9px;}
+.Spinner .DisIn i{background-position:-0px -0px;}
+
+.goodsInfoCon{width:1000px; height:auto; margin:50px auto;}
+.goodsInfoCon h4{width:1000px; height:30px; border-bottom:2px solid #ccc; line-height:30px; font-size:16px; color:#333;}
+.goodsInfoCon h4 span{border-bottom:2px solid #0aa39a; padding:5px 15px;}
+.goodsInfoCon div{width:960px; height:auto; margin:30px auto; font-size:14px; line-height:25px;}
+.goodsInfoCon div img{width:100%; margin:15px 0;}
+/*2015-6-4  add  唐小莉  商品滚动显示*/
+.plan_tg{width:1000px; height:292px; margin:0 auto; position:relative;}
+.plan_tg h4{width:1000px; height:30px; border-bottom:2px solid #ccc; line-height:30px; font-size:16px; color:#333;}
+.plan_tg h4 span{border-bottom:2px solid #0aa39a; padding:5px 15px;}
+.blk_18{overflow:hidden; zoom:1; width:900px; margin:25px auto 0;}
+.blk_18 .pcont{width:800px; float:left; overflow:hidden;}
+.blk_18 .ScrCont{width:32766px; zoom:1;}
+.blk_18 #List1_1, .blk_18 #List2_1{float:left;}
+.blk_18 .LeftBotton, .blk_18 .RightBotton{width:35px; height:98px; float:left; background:url(../images/ax.png) no-repeat; margin-top:50px;}
+.blk_18 .LeftBotton{background-position: 0 0; margin-right:15px;}
+.blk_18 .RightBotton{background-position: 0 -98px; margin-left:15px;}
+.blk_18 .LeftBotton:hover{background-position: -35px 0;}
+.blk_18 .RightBotton:hover{background-position: -35px -98px;}
+.playerdetail{width:150px; height:235px; float:left; margin:0 5px;}
+.playerdetail .detailimg{width:152px;height:180px; display:block;}
+.playerdetail .detailimg img{width:152px;height:180px;}
+.playerdetail .teadetail{width:152px; height:50px; margin-top:5px;}
+.playerdetail .teadetail p{width:152px; height:26px; font-size:13px; color:#333; line-height:26px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.playerdetail .teadetail i span{width:65px; height:24px; display:block; float:left; line-height:24px; font-size:14px; font-weight:bold;color:red; text-align:center; font-style:normal;}
+.playerdetail .teadetail i a{width:75px; height:24px; display:block; font-size:13px; font-style:normal; text-decoration:none; float:right; outline:none; line-height:24px; text-align:center; border-radius:5px; background:#0aa39a; color:#fff; font-weight:bold; cursor:pointer;}
+
+@media screen and (max-width:1024px){
+/*商品信息*/
+.goodsInfo{width:900px;}
+.goodsInfo > p{width:860px;}	
+.goodsInfo > ul{width:900px;}
+.goodsInfo > ul li:nth-last-child(2){width:420px;}
+.goodsInfo > ul li:nth-last-child(1){width:450px; margin-left:30px;}
+.goodsInfo > ul li img{width:420px;}
+.goodsInfo > ul li h3{width:420px;}
+.goodsInfo > ul li p{width:390px;}
+.goodsInfo > ul li b{width:390px;}
+.goodsInfo > ul li > i{width:390px;}
+.goodsInfo > ul li > i a{margin:30px 60px 0 0;}
+
+/*内容部分*/
+.goodsInfoCon{width:900px;}
+.goodsInfoCon h4{width:900px;}
+.goodsInfoCon div{width:860px;}
+.goodsInfoCon div img{width:100%; margin:15px 0;}
+
+.plan_tg{width:900px;}
+.plan_tg h4{width:900px;}
+}
+/*2015-6-4  add  唐小莉  商品详情页*/
+
+
+/*2015-6-5  add  唐小莉  购物车*/
+.cartCon{width:1240px; height:auto; margin:40px auto;}
+.cartCon ul:after{content:" "; display:block; clear:both;}
+.cartCon .cartConTitle{width:1240px; height:40px;}
+.cartCon .cartConTitle:after{content:" "; display:block; clear:both;}
+.cartCon .cartConTitle h2{width:940px; height:40px; display:inline-block; line-height:40px; font-size:22px;}
+.cartCon .cartConTitle h2 img{position:relative; top:4px; padding-right:8px;}
+.cartCon .cartConTitle span{display:inline-block; width:150px; text-align:right; color:red; font-weight:bold;}
+.cartCon .cartConTitle select{width:135px; height:30px; border:1px solid #ccc; display:inline-block; position:relative; bottom:3px; outline:none;}
+/*2015-6-5  add  唐小莉  购物流程图*/
+.ShoppingProcess{width:1010px; height:134px; margin:50px auto 40px;}
+.ShoppingProcess li{display:block; float:left;}
+.ShoppingProcess li:nth-child(2n+1){width:134px; border-radius:67px; background:#ccc; font-size:18px; line-height:134px; text-align:center; color:#000;}
+.ShoppingProcess li.cartSlected{width:134px; height:134px; background:#0aa39a; color:#fff;}
+.ShoppingProcess li:nth-child(2n){width:284px; height:40px; margin:47px 10px;}
+
+@media screen and (max-width:1024px){
+.ShoppingProcess{width:900px; height:120px;}
+.ShoppingProcess li{display:block; float:left;}
+.ShoppingProcess li:nth-child(2n+1){width:120px; line-height:120px; font-size:15px;}
+.ShoppingProcess li.cartSlected{width:120px; height:120px;}
+.ShoppingProcess li:nth-child(2n){width:250px;}
+.ShoppingProcess li:nth-child(2n) img{width:250px;}
+}
+/*2015-6-5  add  唐小莉  购物车商品列表*/
+.cartCon .cartListName{width:1238px; height:auto; background:#f6f6f6; border:1px solid #ccc; border-top:0;}
+.cartCon .cartListName li{float:left; height:40px; display:block; font-size:15px; font-weight:bold; line-height:40px; text-align:center; border-top:2px solid #ccc;}
+.cartCon .cartListName li:nth-last-child(1){width:140px;}
+.cartCon .cartListName li:nth-last-child(2){width:150px;}
+.cartCon .cartListName li:nth-last-child(3){width:180px;}
+.cartCon .cartListName li:nth-last-child(4){width:100px;}
+.cartCon .cartListName li:nth-last-child(5){width:150px;}
+.cartCon .cartListName li:nth-last-child(6){width:268px;}
+.cartCon .cartListName li:nth-last-child(7){width:150px;}
+.cartCon .cartListName li:nth-last-child(8){width:100px;}
+.cartCon .cartListName li .check-all{width:14px; height:14px; margin-top:12px;}
+
+.cartCon .cartListInfo{width:1238px; height:auto; border:1px solid #ccc; border-top:0;}
+.cartCon .cartListInfo li{float:left; height:100px; display:block; font-size:15px; font-weight:bold; line-height:100px; text-align:center;}
+.cartCon .cartListInfo li .ids{width:14px; height:14px; margin-top:43px;}
+.cartCon .cartListInfo li:nth-last-child(1){width:140px;}
+.cartCon .cartListInfo li:nth-last-child(2){width:150px;}
+.cartCon .cartListInfo li:nth-last-child(3){width:180px;}
+.cartCon .cartListInfo li:nth-last-child(4){width:100px;}
+.cartCon .cartListInfo li:nth-last-child(5){width:150px;}
+.cartCon .cartListInfo li:nth-last-child(6){width:268px;}
+.cartCon .cartListInfo li:nth-last-child(7){width:150px;}
+.cartCon .cartListInfo li:nth-last-child(8){width:100px;}
+.cartCon .cartListInfo li:nth-last-child(1) a b{width:16px; height:16px; display:block; margin:42px auto;}
+.cartCon .cartListInfo li:nth-last-child(1) a b img{width:16px; height:16px;}
+.cartCon .cartListInfo li a > img{width:80px; height:80px; margin:10px auto;}
+.cartCon .cartListInfo li .check{width:14px; height:14px; margin-top:43px;}
+.cartCon .cartListInfo li a{width:268px; height:100px; line-height:100px; font-size:14px; color:#0aa39a; font-weight:normal;}
+.cartCon .cartListInfo li a:hover{color:red;}
+.cartCon .cartListInfo li span{font-weight:normal;}
+
+.cartCon .cartListInfo li .Spinner{display:block; overflow:hidden; width:100px; margin:33px auto;}
+.cartCon .cartListInfo li .Spinner .Amount{width:36px;height:17px;padding:4px 5px;line-height:17px;border-width:1px 0;border-style:solid;border-color:#d9d9d9;float:left;text-align:center;color:#565656;outline:0;}
+.cartCon .cartListInfo li .Spinner a{display:inline-block;width:25px;height:25px;border:1px solid #d9d9d9;background-color:#f7f7f7;float:left;cursor:pointer;outline:0;}
+.cartCon .cartListInfo li .Spinner a i{font-style:normal;background:url(../images/BuynBtn.png) no-repeat;display:block;width:9px;height:9px;margin:8px;text-indent:999999%;overflow:hidden;}
+.cartCon .cartListInfo li .Spinner .Decrease i{background-position:-9px -9px;}
+.cartCon .cartListInfo li .Spinner .Increase i{background-position:-9px -0px;}
+.cartCon .cartListInfo li .Spinner .DisDe i{background-position:-0px -9px;}
+.cartCon .cartListInfo li .Spinner .DisIn i{background-position:-0px -0px;}
+
+/*2015-6-5  add  唐小莉  底部删除，提交等模块*/
+.cartCon p{width:1238px; height:40px; border:1px solid #ccc; border-top:0; font-size:14px; font-weight:bold; line-height:40px;}
+.cartCon p img{padding:0 10px 0 40px; position:relative; top:3px;}
+.cartCon p a{color:#333;}
+.cartCon .cartSubmit{width:1238px; height:100px; border:1px solid #ccc; border-top:0; text-align:right;}
+.cartCon .cartSubmit span{font-size:15px; width:1138px; height:60px; margin:0 auto; display:block; line-height:60px;}
+.cartCon .cartSubmit span b{font-size:28px; color:red;}
+.cartCon .cartSubmit i{width:1138px; height:30px; margin:0 auto; display:block; font-style:normal;}
+.cartCon .cartSubmit i:after{content:" "; display:block; clear:both;}
+.cartCon .cartSubmit i a{width:100px; height:30px; display:inline-block; border:1px solid #ccc; line-height:30px; text-align:center; border-radius:5px;}
+.cartCon .cartSubmit i a:first-child{background:#fff; font-size:14px; color:#333;}
+.cartCon .cartSubmit i a:last-child{background:#0aa39a; font-size:15px; font-weight:bold; color:#fff; margin-left:15px;}
+
+@media screen and (max-width:1024px){
+.cartCon{width:900px;}
+.cartCon .cartConTitle{width:900px;}
+.cartCon .cartConTitle h2{width:605px;}
+
+.cartCon .cartListName{width:898px;}
+.cartCon .cartListName li:nth-last-child(1){width:100px;}
+.cartCon .cartListName li:nth-last-child(2){width:100px;}
+.cartCon .cartListName li:nth-last-child(3){width:140px;}
+.cartCon .cartListName li:nth-last-child(4){width:100px;}
+.cartCon .cartListName li:nth-last-child(5){width:100px;}
+.cartCon .cartListName li:nth-last-child(6){width:200px;}
+.cartCon .cartListName li:nth-last-child(7){width:100px;}
+.cartCon .cartListName li:nth-last-child(8){width:58px;}
+
+.cartCon .cartListInfo{width:898px;}
+.cartCon .cartListInfo li:nth-last-child(1){width:100px;}
+.cartCon .cartListInfo li:nth-last-child(2){width:100px;}
+.cartCon .cartListInfo li:nth-last-child(3){width:140px;}
+.cartCon .cartListInfo li:nth-last-child(4){width:100px;}
+.cartCon .cartListInfo li:nth-last-child(5){width:100px;}
+.cartCon .cartListInfo li:nth-last-child(6){width:200px;}
+.cartCon .cartListInfo li:nth-last-child(7){width:100px;}
+.cartCon .cartListInfo li:nth-last-child(8){width:58px;}
+
+/*2015-6-5  add  唐小莉  底部删除，提交等模块*/
+.cartCon p{width:898px;}
+.cartCon .cartSubmit{width:898px;}
+.cartCon .cartSubmit span{width:870px;}
+.cartCon .cartSubmit i{width:870px;}
+}
+
+/*2015-6-5  add  唐小莉  购物车*/
+
+
+
+/*2015-6-5  add  唐小莉  核对订单信息*/
+.checkOrder{width:1160px; height:auto; margin:40px auto;}
+.checkOrder .checkOrderInfo{width:1158px; height:auto; border:1px solid #ccc;}
+.checkOrder .checkOrderInfo ul:after{content:" "; display:block; clear:both;}
+.checkOrder .checkOrderInfo h3{width:1078px; height:40px; padding:0 40px; background:#0aa39a; color:#fff; font-size:16px; line-height:40px;}
+.checkOrder .checkOrderInfo > p{width:1078px; height:32px; display:block; margin:20px 40px 0; line-height:30px;}
+.checkOrder .checkOrderInfo > p:after{content:" "; display:block; clear:both;}
+.checkOrder .checkOrderInfo > p span{width:976px; height:32px; display:block; float:left;}
+.checkOrder .checkOrderInfo > p a{width:100px; height:30px; display:block; float:left; border:1px solid #ccc; border-radius:5px; font-size:14px; text-align:center; color:#333;}
+.checkOrder .checkOrderInfo > p a:last-child{border:0; color:#0aa39a; font-weight:bold;}
+.checkOrder .checkOrderInfo .checkArea{width:1078px; height:auto; padding:0 40px 10px; border-bottom:1px dotted #ccc;}
+.checkOrder .checkOrderInfo .checkArea li{width:185px; height:75px; padding:20px 30px; float:left; border:1px solid #ddd; margin:15px 11px;}
+.checkOrder .checkOrderInfo .checkArea li:hover,.checkOrder .checkOrderInfo .checkArea li.checkAreaSlected{border:1px solid #f27510;}
+.checkOrder .checkOrderInfo .checkArea li b{display:block; font-size:15px; font-weight:bold; line-height:30px; text-align:center;}
+.checkOrder .checkOrderInfo .checkArea li span{display:block; width:185px; height:44px; font-size:14px; line-height:22px; text-align:center; overflow:hidden;}
+
+.checkOrder .checkOrderInfo .selectPay{width:1078px; height:auto; padding:0 40px 10px; border-bottom:1px dotted #ccc;}
+.checkOrder .checkOrderInfo .selectPay li{width:110px; height:40px; padding:5px 10px; float:left; border:1px solid #ddd; margin:15px 22px;}
+.checkOrder .checkOrderInfo .selectPay li.paySelected,.checkOrder .checkOrderInfo .selectPay li:hover{border:1px solid #f27510;}
+
+.checkOrder .checkOrderInfo h4{font-size:14px; width:1078px; height:35px; padding:0 40px; line-height:35px;}
+.checkOrder .checkOrderInfo .checkOrderList{width:1100px; height:40px; margin:0 auto; background:#f6f6f6;}
+.checkOrder .checkOrderInfo .checkOrderList li{float:left; height:40px; line-height:40px; text-align:center; font-size:15px; font-weight:bold;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(1){width:180px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(2){width:180px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(3){width:180px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(4){width:180px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(5){width:380px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo{width:1100px; height:60px; margin:0 auto; border-bottom:1px dotted #ddd;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li{float:left; height:60px; line-height:60px; text-align:center; font-size:14px;overflow:hidden; white-space:nowrap; text-overflow:ellipsis; padding:0 15px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(1){width:150px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(2){width:150px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(3){width:150px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(4){width:150px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(5){width:350px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li a{color:#0aa39a; font-weight:bold;}
+.checkOrder .checkOrderInfo i{width:1100px; height:100px; display:block; margin:15px auto; font-style:normal; background:#f6f6f6;}
+.checkOrder .checkOrderInfo i span{width:980px; height:40px; display:block; margin:0 auto; font-size:14px; line-height:40px;}
+.checkOrder .checkOrderInfo i span:first-child{padding-top:10px;}
+
+.checkOrder .checkOrderInfo .orderRemarks{width:1100px; height:54px; margin:0 auto 15px;}
+.checkOrder .checkOrderInfo .orderRemarks:after{content:" "; display:block; clear:both;}
+.checkOrder .checkOrderInfo .orderRemarks b{width:60px; height:auto; display:block; float:left; font-size:15px; color:#333;}
+.checkOrder .checkOrderInfo .orderRemarks textarea{width:1018px; height:42px; font-size:14px; line-height:21px; border:1px solid #ddd; padding:5px 10px; outline:none;}
+
+.checkOrder .checkOrderInfo .submitOrder{width:1158px; height:180px; border-top:1px solid #ccc;}
+.checkOrder .checkOrderInfo .submitOrder:after{content:" "; display:block; clear:both;}
+.checkOrder .checkOrderInfo .submitOrder p{width:1100px; display:block; margin:0 auto; text-align:right;}
+.checkOrder .checkOrderInfo .submitOrder p:nth-last-child(1){height:35px; margin:20px auto 10px;}
+.checkOrder .checkOrderInfo .submitOrder p:nth-last-child(2){height:40px; margin-top:20px;}
+.checkOrder .checkOrderInfo .submitOrder p .selectCoupon{width:150px; height:30px; border:1px solid #ccc; margin-top:17px; outline:none; padding:0 5px; overflow:hidden;}
+.checkOrder .checkOrderInfo .submitOrder p span{font-size:14px; color:#333;}
+.checkOrder .checkOrderInfo .submitOrder p b{font-size:30px; color:red;}
+.checkOrder .checkOrderInfo .submitOrder p a{width:125px; height:35px; display:block; float:right; background:#0aa39a; border-radius:5px; font-size:17px; font-weight:bold; line-height:35px; text-align:center; color:#fff; letter-spacing:1px;}
+
+
+@media screen and (max-width:1024px){
+.checkOrder{width:900px;}
+.checkOrder .checkOrderInfo{width:900px;}
+.checkOrder .checkOrderInfo h3{width:860px; padding:0 20px;}
+.checkOrder .checkOrderInfo > p{width:860px; margin:20px 20px 0;}
+.checkOrder .checkOrderInfo > p span{width:760px;}
+.checkOrder .checkOrderInfo > p a{width:100px;}
+
+.checkOrder .checkOrderInfo .checkArea{width:880px; padding:0 10px 10px;}
+.checkOrder .checkOrderInfo .checkArea li{width:176px; padding:20px 10px;}
+.checkOrder .checkOrderInfo .checkArea li span{width:176px; font-size:13px;}
+
+.checkOrder .checkOrderInfo .selectPay{width:860px; padding:0 20px 10px;}
+.checkOrder .checkOrderInfo .selectPay li{margin:15px 20px;}
+
+.checkOrder .checkOrderInfo h4{width:860px; padding:0 20px;}
+.checkOrder .checkOrderInfo .checkOrderList{width:900px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(1){width:140px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(2){width:140px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(3){width:140px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(4){width:140px;}
+.checkOrder .checkOrderInfo .checkOrderList li:nth-last-child(5){width:340px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo{width:900px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li{padding:0 10px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(1){width:120px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(2){width:120px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(3){width:120px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(4){width:120px;}
+.checkOrder .checkOrderInfo .checkOrderListInfo li:nth-last-child(5){width:320px;}
+.checkOrder .checkOrderInfo i{width:900px;}
+.checkOrder .checkOrderInfo i span{width:860px;}
+
+.checkOrder .checkOrderInfo .orderRemarks{width:860px;}
+.checkOrder .checkOrderInfo .orderRemarks b{width:60px;}
+.checkOrder .checkOrderInfo .orderRemarks textarea{width:778px; padding:5px 10px;}
+
+.checkOrder .checkOrderInfo .submitOrder{width:900px;}
+.checkOrder .checkOrderInfo .submitOrder p{width:860px;}
+}
+/*2015-6-5  add  唐小莉  核对订单信息*/
+
+
+/*2015-6-5  add  唐小莉  订单提交成功*/
+.submitSuccess{width:1240px; height:auto; margin:50px auto; border:1px solid #ccc; padding:30px 0 60px;}
+.submitSuccess h3{width:1000px; height:50px; margin:20px auto;}
+.submitSuccess h3 img{width:50px; height:50px; margin-right:15px;}
+.submitSuccess h3 span{font-size:22px; color:green; position:relative; bottom:12px;}
+.submitSuccess p{width:865px; height:35px; display:block; margin:0 auto; font-size:14px; line-height:35px;}
+.submitSuccess > span{width:865px; height:35px; display:block; margin:0 auto; font-size:14px; line-height:35px;}
+.submitSuccess > span b{ font-weight:normal; color:#f27510;}
+.submitSuccess i{width:900px; height:50px; display:block; margin:20px auto 0; font-style:normal;}
+.submitSuccess i a:nth-last-child(2){width:115px; height:34px; display:inline-block; background:#f27510; color:#fff; line-height:34px; text-align:center; font-size:16px; font-weight:bold; border-radius:5px; position:relative; bottom:20px; margin-right:30px;}
+.submitSuccess i a:nth-last-child(1){width:130px; height:48px; display:inline-block; border:1px solid #ccc;}
+.submitSuccess i a img{padding:5px 10px;}
+
+@media screen and (max-width:1024px){
+.submitSuccess{width:898px;}
+.submitSuccess h3{width:600px;}
+.submitSuccess p{width:470px;}
+.submitSuccess > span{width:470px;}
+.submitSuccess i{width:470px; height:50px; display:block; margin:20px auto 0; font-style:normal;}	
+}
+/*2015-6-5  add  唐小莉  订单提交成功*/
+
+
+/*2015-6-29  add  唐小莉  支付成功*/
+.paySuccess{width:1240px; height:auto; margin:50px auto; border:1px solid #ccc; padding:30px 0 60px;}
+.paySuccess h3{width:1000px; height:50px; margin:20px auto;}
+.paySuccess h3 img{width:50px; height:50px; margin-right:15px;}
+.paySuccess h3 span{font-size:22px; color:green; position:relative; bottom:12px;}
+.paySuccess p{width:865px; height:35px; display:block; margin:0 auto; font-size:14px; line-height:35px;}
+.paySuccess i{width:900px; height:50px; display:block; margin:40px auto 0; font-style:normal;}
+.paySuccess i a{width:130px; height:34px; display:inline-block; background:#f27510; color:#fff; line-height:34px; text-align:center; font-size:16px; font-weight:bold; border-radius:5px; position:relative; bottom:20px; margin-right:30px;}
+
+@media screen and (max-width:1024px){
+.paySuccess{width:900px;}	
+.paySuccess h3{width:650px;}
+.paySuccess p{width:520px;}
+.paySuccess i{width:520px;}
+} 
+/*2015-6-29  add  唐小莉  支付成功*/
+
+
+
+/*2015-6-5  add  唐小莉  找回密码*/
+.retrievePassword{width:608px; height:365px; float:left; border:1px solid #ccc; margin-top:50px;}
+.retrievePassword h3{width:508px; height:40px; line-height:40px; font-size:18px; background:#ddd; padding:0 50px; color:#333;}
+.retrievePassword h3 span{font-size:14px; padding-left:10%;}
+.retrievePassword h3 span a{color:#0aa39a;}
+.retrievePassword ul{width:450px; height:auto; margin:40px auto;}
+.retrievePassword ul li{width:450px; height:auto;}
+.retrievePassword ul li > span{width:450px; display:block; margin-bottom:20px; font-size:14px; text-indent:2em; line-height:24px; color:#999;}
+.retrievePassword ul li > i{font-style:normal; font-size:14px; display:block; font-weight:bold; line-height:30px;}
+.retrievePassword ul li > i b{color:red; position:relative; top:4px; padding-right:4px;}
+.retrievePassword ul li > input[type="tel"]{width:300px; height:30px; border:1px solid #ccc;}
+.retrievePassword ul li > u{font-size:13px; color:#f27510; text-decoration:none; line-height:32px; padding-left:8px;}
+.retrievePassword ul li > p{display:block; width:450px; height:32px; margin:25px 0;}
+.retrievePassword ul li > p input[type="text"]{width:150px; height:30px; display:inline-block; border:1px solid #ccc;}
+.retrievePassword ul li > p input[type="button"]{width:100px; height:30px; display:inline-block; margin-left:25px; border-radius:5px; font-size:14px; color:#333; text-align:center; line-height:30px; cursor:pointer;}
+.retrievePassword ul li > input[type="button"]{width:300px; height:30px; background:#0aa39a; font-size:15px; color:#fff; text-align:center; line-height:30px; cursor:pointer; font-weight:bold; letter-spacing:2px;}
+
+.retrievePassword .step2{width:450px; height:auto; margin:40px auto;}
+.retrievePassword .step2 li{width:450px; height:auto; margin-bottom:35px;}
+.retrievePassword .step2 li > i{font-style:normal; font-size:14px; display:block; font-weight:bold; line-height:30px;}
+.retrievePassword .step2 li > i b{color:red; position:relative; top:4px; padding-right:4px;}
+.retrievePassword .step2 li > input[type="password"]{width:300px; height:30px; border:1px solid #ccc;}
+.retrievePassword .step2 li > u{font-size:13px; color:#f27510; text-decoration:none; line-height:32px; padding-left:8px;}
+
+.step3{width:608px; height:50px; float:left; margin:180px auto; font-size:16px; font-weight:bold; color:green;}
+.step3 a{padding:0 8px; text-decoration:underline; color:red;}
+/*2015-6-5  add  唐小莉  找回密码*/
+
+
+
+/*2015-6-5  add  唐小莉  帮助中心*/
+.helpCenter{width:1180px; height:auto; margin:40px auto;}
+.helpCenter:after{content:" "; display:block; clear:both;}
+.helpCenter .helpCenterNav{width:200px; height:auto; float:left; margin-right:18px;}
+.helpCenter .helpCenterNav dl{width:200px; height:auto;}
+.helpCenter .helpCenterNav dl dt{width:140px; height:40px; padding:0 30px; line-height:40px; font-size:15px; font-weight:bold; background:#ccc; margin-top:10px;}
+.helpCenter .helpCenterNav dl dt:first-child{margin-top:0;}
+.helpCenter .helpCenterNav dl dd{width:200px; height:40px; line-height:40px; font-size:14px; border-bottom:1px dotted #ddd;}
+.helpCenter .helpCenterNav dl dd a{width:140px; height:40px; display:block; padding:0 30px; color:#333; background:#f6f6f6;}
+.helpCenter .helpCenterNav dl dd a:hover,.helpCenter .helpCenterNav dl dd a.helpCenterSelected{background:#ddd; color:#0aa39a;}
+.helpCenter .helpCenterInfo{width:960px; height:auto; padding:15px 0; float:left; border:1px solid #ccc; border-radius:5px;}
+.helpCenter .helpCenterInfo h4{width:920px; height:50px; margin:0 auto; text-align:center; line-height:50px; border-bottom:1px solid #ddd;}
+.helpCenter .helpCenterInfo div{width:920px; height:auto; margin:0 auto; font-size:14px; line-height:24px;}
+.helpCenter .helpCenterInfo div img{width:100%; margin:10px auto;}
+
+@media screen and (max-width:1024px){
+.helpCenter{width:900px;}
+.helpCenter .helpCenterInfo{width:680px;}
+.helpCenter .helpCenterInfo h4{width:650px;}
+.helpCenter .helpCenterInfo div{width:650px;}
+	
+.retrievePassword{width:468px;}
+.retrievePassword h3{width:428px; padding:0 20px;}
+.retrievePassword ul{width:430px;}
+.retrievePassword ul li{width:430px;}
+.retrievePassword ul li > span{width:430px;}
+
+.retrievePassword .step2{width:440px;}
+.retrievePassword .step2 li{width:440px;}
+
+.step3{width:460px;}
+}
+/*2015-6-5  add  唐小莉  帮助中心*/
+
+
+
+/*2015-6-15  add  唐小莉  活动页面*/
+.eventsTop{width:100%; height:25px; border-bottom:1px solid #ccc; background:#ddd;}
+.eventsTop .eventsTopInfo{width:1200px; height:25px; margin:0 auto;}
+.eventsTop .eventsTopInfo:after{content:" "; display:block; clear:both;}
+.eventsTop .eventsTopInfo span{float:left; font-size:13px; color:#666; line-height:25px;}
+.eventsTop .eventsTopInfo ul{float:right;}
+.eventsTop .eventsTopInfo ul:after{content:" "; display:block; clear:both;}
+.eventsTop .eventsTopInfo ul li{float:left; margin:0 8px; line-height:25px; position:relative;}
+.eventsTop .eventsTopInfo ul li > a{font-size:14px; color:#333;}
+.eventsTop .eventsTopInfo ul li > a:hover{color:red;}
+.eventsTop .eventsTopInfo ul li p{padding-left:10px;}
+.eventsTop .eventsTopInfo ul li p a{color:#0aa39a; font-size:14px; font-weight:bold;}
+.eventsTop .eventsTopInfo ul li b{position:absolute; background:red; color:#fff; font-size:12px; font-weight:normal; line-height:16px; padding:0 3px; border-radius:5px; left:12px;}
+.eventsTop .eventsTopInfo ul li a img{position:relative; top:2px;}
+
+.eventsCon{width:100%; height:auto; position:relative;}
+.eventsCon .eventsConInfo{width:100%; height:auto;}
+.eventsCon input{width:300px; height:80px; background:#0aa39a; color:#fff; font-size:40px; font-weight:bold; text-align:center; line-height:50px; letter-spacing:8px; border-radius:8px; box-shadow:3px 3px 5px #333; margin:0 auto; position:absolute; bottom:25px; left:50%; margin-left:-150px; cursor:pointer;}
+
+.evevtCon{width:1240px; height:auto; margin:40px auto;}
+.evevtCon img{width:100%; height:auto;}
+
+/*2015-6-15  add  唐小莉  活动页面*/
+
+
+/*不同分辨率显示问题*/
+@media screen and (max-width:1366px){
+.evevtCon{width:960px;}
+
+.goodsCon{width:1200px;}
+.goodsCon .goodsConList{width:1200px;}
+.goodsCon .goodsConList p{width:1120px;}
+.goodsCon .goodsConList ul{width:1200px;}
+.goodsCon .goodsConList ul li{margin:25px 40px;}
+
+.goodsCon .goodsConList .page{width:1120px;}
+.goodsCon .goodsConList .page p{width:1120px;}
+}
+
+@media screen and (max-width:1024px){
+.evevtCon{width:960px;}
+
+.goodsCon{width:900px;}
+.goodsCon .goodsConList{width:900px;}
+.goodsCon .goodsConList p{width:860px; margin:0 20px;}
+.goodsCon .goodsConList .goodsListCategory{width:900px;}
+.goodsCon .goodsConList .goodsListCategory span{width:80px; margin-right:20px;}
+
+.goodsCon .goodsConList ul{width:900px;}
+.goodsCon .goodsConList ul li{width:180px; margin:25px 22px;}
+.goodsCon .goodsConList ul li img{width:180px; height:220px;}
+.goodsCon .goodsConList ul li p{width:180px;}
+.goodsCon .goodsConList ul li p span{width:110px;}
+.goodsCon .goodsConList ul li p b{width:70px;}
+.goodsCon .goodsConList ul li i{width:180px;}
+.goodsCon .goodsConList ul li i a{width:70px; margin:0 10px; font-size:13px;}
+
+.goodsCon .goodsConList .page{width:900px;}
+.goodsCon .goodsConList .page p{width:900px;}
+}
+
+/*2015-6-13  add  ddf  分页*/
+.pagination{float:right; margin-right:15px;}
+.pagination li{float:left; margin:5px 5px; border:1px solid #ccc;}
+.pagination li a{color: #333; display: block; line-height: 12px; padding: 8px 12px;}
+.active{background:#0aa39a;}
+/*2015-6-13  add  ddf  分页*/
+
+.on{color:#0aa39a;}
+
+/*2015-6-24  add  ddf  订单详情 支付按钮*/
+.cartListInfoNot{background: url("../images/shoppingcart2.png") no-repeat scroll 350px 50px rgba(0, 0, 0, 0);
+    border: 1px solid #ddd;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 50px 30px 50px 400px;
+}
+
+.orderPayGet1{
+	background:#0aa39a;
+    border: 2px solid #ebe9e9;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 14px;
+    text-align: center;
+    width: 118px;
+}
+/*2015-6-24  add  ddf  订单详情 支付按钮*/
+
+/*2015-6-24  add  ddf  订单详情 支付按钮*/
+.orderPayGet{
+	background:#0aa39a;
+    border: 2px solid #ebe9e9;
+    border-radius: 5px;
+	position:absolute;
+	right:340px;
+	color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 10px 10px;
+	text-align: center;
+    width: 118px;
+}
+/*2015-6-24  add  ddf  订单详情 支付按钮*/
+
+@media screen and (max-width:1024px){
+.orderPayGet{
+	background:#0aa39a;
+    border: 2px solid #ebe9e9;
+    border-radius: 5px;
+	position:absolute;
+	right:0;
+	color: #fff;
+    display: block;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 10px 10px;
+	text-align: center;
+    width: 118px;
+}
+
+}

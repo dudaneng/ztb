@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/*帮助页面*/
+.szt_help{border-top:1px solid #fff;margin-bottom:8px;font-size:14px;padding-bottom:30px;overflow:visible;}
+.szt_help .panel-group li{_position:relative;_margin-top:-3px;margin-bottom:1px;}
+.szt_help .panel-group  li,.szt_help .panel-group  li a{display:block;height:32px;}
+.szt_help .panel-group  a{font-size:14px;text-indent:14px;line-height:33px;;_position:absolute;_top:0;_left:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.szt_help .panel-group a.title.top_dashed{width:105%;height:33px;font-weight:bold;color:#fff;background:url(../images/bg_faq_nav.gif) no-repeat  right #B70404;}
+.szt_help .panel-group a.title.collapsed{width:100%;background: #eee;color: #666;}
+.szt_help .article_list{line-height: 40px}
+.szt_help .font14{font-size: 14px}
+.szt_help .color999{color: #999}
+.szt_help .help_content{
+    min-height: 450px;
+}
+.szt_help .help_content *{
+    max-width: 100%;
+}
+@media (max-width: 992px) {
+    .szt_help .panel-group a.title.top_dashed{
+        width: 102%;
+    }
+}

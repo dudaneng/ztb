@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0; font-family:"微软雅黑";}
+body{font-size: 13px;}
+li{list-style: none;}
+a{color: #333; text-decoration: none;}
+.clear{clear: both;}
+/*自提点css*/
+.pickTitle{height:45px; text-align: center; text-align:center; font-size: 15px; line-height: 45px; border-bottom: 1px solid #DDDDDD;color: #666666; font-weight: bold;}
+.pickInfo ul li a{width:98%; padding-left:2%;border-bottom: 1px solid #DDDDDD; height: 40px; line-height: 40px;display:inline-block;border-bottom: 1px solid #DDDDDD;}
+.pickInfo ul li span{float: right; margin-right: 2%; font-size: 14px; color: #909090; font-weight: bold;}
+/*确定页面*/
+.pickconfirm{width:85%;margin:50px auto; }
+.confirmTitle{width:98%;border: 1px solid #DDDDDD; height:30px; background:#DDDDDD; margin: auto; line-height: 30px; padding-left: 2%; font-size: 15px; color: #666666; font-weight: bold;}
+.confirmInfo{width:98%; border: 1px solid #DDDDDD;  padding-left: 2%;}
+.confirmInfo{line-height: 30px;}
+.confirmInfo a{display: block; background: #0AA39A; border-radius: 5px; height: 33px; width: 150px;  margin:20px auto; text-align: center; color: #FFFFFF; 
+line-height: 33px;}
+/*自提点css*/
+
+/*列表页css*/
+.goodsTitle{width:100%; height:25px; text-align:center;line-height:25px; background:#F9F9F9; border-bottom:1px solid #ddd; padding:5px 0;}
+.goodsContent{width:100%; padding-bottom: 45px;}
+.goodsBox{ width:96%; margin:10px auto; padding:2% 1%; border-radius:5px; box-shadow:2px 2px 8px #909090;}
+.imgBox{width: 40%; float: left;}
+.imgBox img{ width: 65px; height: 65px; padding: 5px;}
+.info{width: 60%; float: left; line-height: 25px;}
+.info h3{font-size: 13px;}
+.info p{font-size: 13px; text-align: left;}
+.color{color: red;}
+.info a{display:inline-block;width: 80px; height: 25px; text-decoration: none; text-align: center; line-height: 25px; color: #FFFFFF; background: #FF3300;
+	border-radius: 3px; font-weight: bold;}
+.flLeft{float: left;}
+.flRight{float: right; margin-right: 3px;}
+/*列表页css*/
+
+/*内容页css*/
+.contetBox{width: 100%;margin-bottom:55px;}
+.contentTitle,.userTitle,.unpaidTitle,.orderTitle,.editTitle
+			{width: 100%;height: 35px;border-bottom: 1px solid #DDDDDD; text-align: center; line-height: 35px; font-weight: bold;}
+.contentImg{width: 96%; margin:10px auto;}
+.contentImg img{width:100%;}
+.contentInfo{width: 96%; margin:10px auto; line-height: 28px;}
+.contentInfo p{width: 100%; line-height: 35px;}
+.price{float: left; color:#FF3300; font-size:22px; font-weight: bold; padding-right: 3%;}
+.number{float:left;}
+.plus{float: left; margin-top: 8px;}
+.contentInfo p a{display: block; font-weight: bold; height: 28px; line-height: 28px; width: 100px; color: #fff; text-align: center; float: right; background:#FF3300;border-radius: 3px;
+	padding-top: 5px;}
+
+/*购物车加减css*/
+.spinner{ overflow:hidden; width:150px; position: relative; top: 4px; }
+.spinner .Amount{width:36px;height:17px;padding:4px 5px;line-height:17px;border-width:1px 0;border-style:solid;border-color:#d9d9d9;float:left;text-align:center;color:#565656;outline:0;}
+.spinner a{display:inline-block;width:25px;height:25px;border:1px solid #d9d9d9;background-color:#f7f7f7;float:left;cursor:pointer;outline:0;}
+.spinner a i{font-style:normal;background:url(../images/BuynBtn.png) no-repeat;display:block;width:9px;height:9px;margin:8px;text-indent:999999%;overflow:hidden;}
+.spinner .Decrease i{background-position:-9px -9px;}
+.spinner .Increase i{background-position:-9px -0px;}
+.spinner .DisDe i{background-position:-0px -9px;}
+.spinner .DisIn i{background-position:-9px -0px;}
+/*购物车加减css*/
+
+/*商品--介绍*/
+.goodsIntro,.foodGuarantee{width: 96%; margin: 10px auto;}
+.goodsIntro h3,.foodGuarantee h3{border-bottom: 1px solid #ddd; line-height: 35px; border-left: 3px solid #0AA39A; padding-left:5px;}
+.introInfo{line-height: 25px; padding-top: 10px;}
+.introInfo img{width:100%;}
+/*食材--保证*/
+.guaranteeImg{width:100%;}
+.guaranteeImg img{width:150px; height:80px;}
+.guaranteeInfo{width:100%; text-indent: 25px;}
+.guaranteeInfo img{width:100%;}
+/*内容页css*/
+
+/*购物车css*/
+.cart{width: 100%;margin-top: 15px; padding-bottom: 45px; font-size: 12px;}
+.cartTitle ul{width:100%; margin:0 auto; border-top:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD; }
+.bg{background: #DDDDDD; display: block;}
+.cartTitle ul li{ width:20%;float: left; text-align: center; line-height:35px;}
+.cartInfo ul{width:100%; margin:0 auto; border-bottom: 1px solid #DDDDDD;}
+.cartInfo ul li{width:20%;float: left; text-align: center; line-height:35px;}
+.cartInfo li img{width:40px; height:40px; padding:5%;}
+.cartInfo li ul{border: none;}
+.cartInfo li ul li{ width:100%;line-height: 30px; text-align: center; word-break:keep-all;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.choseTime{width:100%; float: left; margin-top: 15px;}
+.cartBottom{width: 100%; margin-top:10px;}
+.cartBottom p{ text-align: right; padding-right: 4%; }
+.cartBottom a{float: right;display: block;margin-right: 3%;margin-top: 10px; background: #B92C13; height: 28px; width: 180px; border-radius: 3px; color: #FFFFFF; 
+text-align: center; line-height: 28px;}
+.cartInfo li a{}
+.aclolor{display:inline-block; height:20px; width:25px; line-height:18px;border: 1px solid #DDDDDD; border-radius: 3px;}
+.cartInfo li input{width:16px; height:19px; border: none;border: 1px solid #DDDDDD;  padding: 0 2px; position:relative; top:2px;}
+.cartInfo li a img{height:12px; width:12px; margin-top: 22px;}
+
+
+.cart03{ 
+	width:50%;
+	text-align: center; 
+	margin:auto;
+	line-height: 100px; 
+	padding-top: 2%;
+	color:#6BB130;
+	margin:10% auto 0;
+	display:block;
+}
+
+.cartbtn{background: #0AA39A; width:20%; text-align:center; padding:1% 0; margin:0 auto;  border:1px solid #0AA39A; display:block; border-radius: 5px; color: #FFFFFF;}
+/*购物车css*/
+
+/*订单信息确认*/
+.check{ padding-bottom: 45px;}
+.checkTitle{width:97%; padding-left:3%;height: 30px; font-weight: bold; line-height: 30px; background: #DDDDDD; margin-top: 15px; color: #666666;}
+.checkBox{width:97%; padding-left:3%;margin-top: 10px; line-height: 23px;}
+.checkBox a,.goodsList a{display:inline-block; float: right; margin-right:5px;height: 23px; width: 100px; text-align: center; line-height: 23px; text-align: center; background:#46B8B1; color: #FFFFFF;
+ margin-left: 10px;border-radius:5px; }
+.select{width: 96%; margin:15px auto;}
+.select select{width: 98%; background: #DDDDDD; border: 1px solid #909090; border-radius: 5px;}
+.PaymentMethod{border-top: 2px solid #DDDDDD; margin-top: 20px; line-height: 40px; padding-left: 3%;}
+.PaymentMethod p img{ line-height: 40px; border: 1px solid #DDDDDD;}
+.goodsList{padding-left:3%; line-height: 23px;}
+.getTime{padding-left:3%; height: 40px; line-height:40px;}
+.getBox{width: 100%;}
+.getBox ul{width:100%; margin:0 auto; border-top:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD; }
+.bg{background: #DDDDDD; display: block;}
+.getBox ul li{ width:25%;float: left; text-align: center; }
+.getBox ul li img{height: 45px; width: 45px; margin: 5px;}
+.getboxTitle{background: #DDDDDD; line-height:35px;}
+.getboxInfo{line-height: 45px;}
+.remark{width: 100%; margin-top:15px;}
+.remarkBox{width:96%; margin:0 auto;}
+.remarkBox p{line-height: 35px; font-weight: bold;}
+.remarkBox textarea{width: 100%; height: 80px;}
+.reconfirm{width:93%; margin: 10px auto; height: 65px; display: block; background:#BCF5EF; border: 1px solid #DDDDDD; padding-left: 3%; line-height: 32px;
+} 
+.reconfirmResult{width: 97%; text-align: right; padding-right: 3%;}
+.reconfirmResult a{float: right;display: block;margin-top: 10px; background: #B92C13; height: 28px; width: 180px; border-radius: 3px; color: #FFFFFF; 
+text-align: center; line-height: 28px;}
+
+.PayWhiFu{float: left;display: block; margin-left:40px; margin-top: 10px; background:#0aa39a; height: 28px; width: 120px; border-radius: 3px; color: #FFFFFF; 
+text-align: center; line-height: 28px;}
+
+.useCou{width: 96%; margin: 10px auto;}
+.useCou select{margin: 5px; width: 65%; background: #DDDDDD; border: 1px solid #909090; border-radius: 5px;}
+/*订单信息确认*/
+
+/*订单--提交成功css*/
+.submitTitle{width:100%;height: 80px; line-height: 80px; padding-left: 8%; color: #649939; font-size: 16px; font-weight: bold; text-shadow:1px 1px 3px #649939; 
+}
+.submitInfo{width: 100%; border-top:1px solid #DDDDDD;border-bottom:1px solid #DDDDDD; padding-bottom: 45px;} 
+.submitInfo p{padding-left: 8%; line-height: 35px;}
+.submitInfo p a{color:#46B8B1;}
+/*订单--提交成功css*/
+
+/*个人中心首页css*/
+.userbox{height:60px; width: 92%; line-height:30px; padding:3%;margin:15px auto; background: #46B9B3;}
+.userbox b{font-size: 18px;}
+.commonBox{width: 100%;}
+.bottom{padding-bottom: 45px;}
+.commonTitle{background: #DDDDDD; height: 30px; line-height: 30px; font-size: 14px; font-weight: bold; color: #666; padding-left: 10px;}
+.commoninfo{width: 100%;}
+.commoninfo ul li{border-bottom: 1px solid #DDDDDD;height: 38px;line-height: 38px; padding-left: 10px;}
+.commoninfo ul li b{color: #666666;}
+.commoninfo ul li span{float:right; padding-right: 5px; font-size: 16px; font-weight: bold; color: #909090;}
+/*个人中心首页css*/
+
+/*未付款css*/
+.unpaidInfo{ padding-bottom: 45px;}
+.unpaidbox{ width:94%; margin:10px auto; line-height: 25px; border: 1px solid #ddd; font-size: 12px;}
+.unpaidbox p{padding-left: 3%; }
+.unpaidbox p span{float：right; margin-left: 10%;}
+.unpaidbox span b{}
+.unpaidbox .mark{text-align: right; margin-right: 3%; font-weight: bold; color: #666666; font-size: 16px;}
+/*未付款css*/
+
+/*订单详情css*/
+.detailTitle{width:100%;background: #ddd; height: 25px; line-height: 25px;   margin-top:5px;}
+.detailBox{width: 96%; margin: auto; border: 1px solid #ddd; font-size: 12px; margin-top:10px; line-height: 30px; padding-left: 2%;}
+.btnBox{width: 100%;}
+.btnBox a{margin: 3%; display: block; background: #ddd; border-radius: 3px; height: 28px; width:120px;line-height: 28px; text-align: center; font-weight: bold;}
+.time{padding-left: 3%; margin-top: 20px;}
+.orderInfo{margin-top: 15px;}
+.orderInfo ul{width: 96%; margin:0 auto; border: 1px solid #DDDDDD; }
+.bg{background: #DDDDDD; display: block;}
+.orderInfo ul li{ width:32%;float: left; text-align: center; line-height:30px; border-left:1px solid #DDDDDD;}
+.plusPrice{ width: 97%; margin:20px auto; padding-bottom:45px; text-align: right; padding-right: 3%;padding-bottom: 45px;}
+.plusPrice p a{ float:right; margin-top:8px;display: block; background: #ddd; border-radius: 3px; height: 28px; width:120px;line-height: 28px; text-align: center; font-weight: bold;}
+/*订单详情css*/
+
+/*编辑账户等等css*/
+.editBox{ padding-bottom: 45px;}
+.editBox form{width: 90%; margin: 10px auto;}
+.editBox form .item{width: 100%; line-height: 35px;}
+.editBox form .item span{color: #FF0000; padding-right: 2%;font-weight: bold;}
+.editBox form input{width: 100%; line-height:28px; padding-left: 1%;}
+.color1,.color2{color: #FFFFFF; text-align: center; margin-top: 15px;border-radius: 3px; height: 35px; background:#46B8B1; display: block ; border: none; width: 100%; 
+line-height: 35px; cursor: pointer;}
+.color2{background: #DDDDDD; color: #666;}
+.length{width: 50%;}
+.fl{float: left; width: 3%; line-height:35px; padding-top:3px;text-align: left;}
+.reset03{ width:70%; text-align: center; margin:auto;line-height: 350px; background: url(../images/bingo.png) no-repeat left center; padding-left:10%; padding-top: 2%;
+ color:#6BB130;}
+ .editBox form p{line-height: 35px;}
+ .editBox form input[type="checkbox"]{margin-top: 12px;}
+ .name{background:url(../images/name.png) no-repeat right center;border: 1px solid #DDDDDD;}
+ .phone{background: url(../images/phone.png) no-repeat right center; border: 1px solid #DDDDDD;}
+ .lock{background:url(../images/lock.png) no-repeat right center; border: 1px solid #DDDDDD;}
+ .editBox form a{ color: #0AA39A; float: right; }
+ /*优惠券*/
+.coupons{width: 100%; padding-bottom: 45px;font-size: 12px;}
+.coupons .getCoupons{width: 98%; margin:10px auto;}
+.coupons .getCoupons input{width: 48%; margin-left: 1%; height:28px;border:1px solid #DDDDDD;}
+.coupons .getCoupons input[type="button"]{background: #0AA39A; border:1px solid #0AA39A; border-radius: 5px; color: #FFFFFF;}
+.coupons .getCoupons p{margin-left: 1%; height:60px; line-height:30px; color: #666666;}
+.coupons .couInfo ul{width: 99%;margin: auto;border: 1px solid #D9D9D9;border-top:none;}
+.coupons .couInfo ul li{display: inline-block; width:24%; text-align: center;height: 30px; line-height: 30px;}
+.coutitle{background: #DDDDDD; height:35px; line-height:35px;font-weight: bold;color: #666666;}
+/*编辑账户css*/
+/*优惠券活动页*/
+.main{width: 100%;top: 0; left: 0; right: 0; bottom: 0;}
+.main img {width: 100%; height:100%;top: 0; left: 0; right: 0; bottom: 0;}
+.couponsBox{width: 95%; margin:10px auto;}
+.couponsBox img{width: 100%;}
+.couponsBox p{text-align: center; margin-top: 5px;}
+.couponsBox p a{background: #0AA39A;display:block;height: 30px; width: 100%; color: #FFFFFF; border-radius: 5px; line-height: 30px;box-shadow:2px 2px 8px #909090;}
+/*优惠券活动页*/
+
+/*2015-6-13  add  ddf  分页*/
+.pagination{float:right; margin-right:15px;}
+.pagination li{float:left; margin:5px 5px; border:1px solid #ccc;}
+.pagination li a{color: #333; display: block; line-height: 12px; padding: 8px 12px;}
+.active{background:#0aa39a;}
+/*2015-6-13  add  ddf  分页*/
+
+/*文章详情页*/
+.detailsBox{ padding-bottom: 45px;}
+.detailsBox .detailsInfo{width: 90%; margin: 10px auto;}
+.detailsBox .detailsInfo h4{width: 100%; height: 50px; padding-top: 10px; line-height: 24px; text-align: center;}
+.detailsBox .detailsInfo img{width: 100%; height: auto;}
+.detailsBox .detailsInfo p{text-indent: 2em; padding-bottom: 8px; line-height: 22px;}
+
+/*文章列表页*/
+.newListBox{ padding-bottom: 45px;}
+.newListBox .newListInfo{width: 90%; margin: 10px auto;}
+.newListBox .newListInfo form{width: 100%; height: 30px;}
+.newListBox .newListInfo form input[type="text"]{width:71%; padding: 0 2%; height: 28px; border: 1px solid #ccc;}
+.newListBox .newListInfo form input[type="button"]{width:22%; height: 30px; border: 1px solid #ccc;}
+.newListBox .newListInfo >ul{width: 100%; height: auto; padding-top: 12px;}
+.newListBox .newListInfo >ul li{width:100%; height: 50px; display: block; box-shadow: 0 0 3px #ccc; margin-bottom: 8px;}
+.newListBox .newListInfo >ul li a{width:100%; height: 50px; display: block;}
+.newListBox .newListInfo >ul li a:after{content: " "; display: block; clear: both;}
+.newListBox .newListInfo >ul li a:hover{background: rgba(120,169,0,.1);}
+.newListBox .newListInfo >ul li a b{width: 70%; height: 40px; display: block; float: left; margin: 5px 3%; overflow:hidden;}
+.newListBox .newListInfo >ul li a img{width:24%; height: 50px; display: block; float: left;}
+
+.newListBox .newListInfo .pages{width:100%; height: 30px; text-align: center; margin-top: 12px;}
+.newListBox .newListInfo .pages a{padding: 1px  4px; line-height: 30px; color: #333;}
+.newListBox .newListInfo .pages li{padding: 1px  4px; line-height: 30px; color: #333;}
+.newListBox .newListInfo .pages a:hover{background: #78a900; color: #fff;}
+.newListBox .newListInfo .pages span{padding: 1px 4px; line-height: 30px; color: #333;}

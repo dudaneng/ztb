@@ -1,0 +1,149 @@
+@charset "utf-8";
+*{margin:0; padding:0; border:0; font-family:"微软雅黑";}
+ul,ul li{list-style:none;}
+a,a:hover{text-decoration:none;}
+
+
+/*2015-5-27  add  唐小莉  头部*/
+.header{width:100%; height:130px; background:#0aa39a;}
+.headInfo{width:1480px; height:90px; margin:0 auto; position:relative; top:20px;}
+.headInfo .logo{float:left; display:block; width:232px; height:90px;}
+.headInfo .logo img{margin-top:2px;}
+.headInfo .nav{float:right; width:600px; height:90px;}
+.headInfo .nav ul{width:600px; display:block;}
+.headInfo .nav ul li{float:left; height:50px; margin-right:20px;}
+.headInfo .nav ul li a{line-height:50px; font-size:16px; color:#fff;}
+.headInfo .nav ul li a img{ position:relative; top:5px; margin-right:8px;}
+.headInfo .nav ul li a span{padding:3px 10px; background:red; border-radius:5px;}
+/*2015-5-27  add  唐小莉  自提点选择下拉框*/
+.headInfo .nav .area{width:600px; height:40px; border-radius:5px; background:#fff;}
+.headInfo .nav .area img{float:left; padding:10px 25px;}
+.headInfo .nav .area span{width:2px; height:24px; float:left; display:block; background:#0aa39a; margin:8px 0;}
+.area .select{position:relative; float:left; z-index:9;height:40px; display:block; background:#fff url(../images/ico.png) no-repeat right center;line-height:40px; text-align:center; cursor:pointer; width:514px; padding-right:12px; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; position:relative; z-index:99; font-size:18px; outline:none;}
+
+.black_overlay{display:none; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,.5); z-index:1001;}
+.white_content{display:none; position:absolute; top:30%; left:25%; width:50%; height:auto; background:white; z-index:1002; overflow:auto; border-radius:5px; border:2px solid #ddd;}
+.white_content span{width:100%; height:30px; display:block; text-align:right; z-index:9998;}
+.white_content span img{width:30px; height:30px; z-index:9999;}
+.conList{width:90%; height:auto; margin:0 auto; margin-bottom:4%;}
+.conList h3{font-size:20px; color:#666; line-height:48px; font-weight:normal;}
+.conList .areaList{width:100%; height:auto; margin:10px 0 20px 0;}
+.conList .areaList:after{clear:both; content:' '; display:block;}
+.conList .areaList h4{width:12%; font-size:14px; color:#666; float:left; line-height:21px; margin-bottom:10px;}
+.conList .areaList ul{width:88%; height:auto; float:left;}
+.conList .areaList ul:after{clear:both; content:' '; display:block;}
+.conList .areaList ul li{font-size:14px; color:#666; float:left; line-height:21px; margin-bottom:10px; margin-right:25px;}
+.conList .areaList ul li a{color:#666;}
+.conList .areaList ul li a:hover{color:#0aa39a;}
+.areaInfo{width:100%; height:auto; background:#F2ECEC;}
+.areaInfo ul{padding:10px 15px;}
+.areaInfo ul li{font-size:13px; color:#666; line-height:24px;}
+
+.on{color:#0aa39a;}
+
+/*2015-5-27  add  唐小莉  banner*/
+.flexslider{position:relative;height:460px;overflow:hidden;background:url(../images/loading.gif) 50% no-repeat;}
+.slides{position:relative;z-index:1;}
+.slides li{height:460px;}
+.flex-control-nav{position:absolute;bottom:10px;z-index:2;width:100%;text-align:center;}
+.flex-control-nav li{display:inline-block;width:12px;height:12px;margin:0 5px;*display:inline;zoom:1;}
+.flex-control-nav a{display:inline-block;width:12px;height:12px;line-height:40px;overflow:hidden;background:#0aa39a; cursor:pointer;border-radius:50%;}
+.flex-control-nav .flex-active{background:#fff; width:10px; height:10px; border:1px solid #0aa39a;}
+.flex-direction-nav{position:absolute;z-index:3;width:100%;top:46%;}
+.flex-direction-nav li a{display:block;width:50px;height:50px;overflow:hidden;cursor:pointer;position:absolute;}
+.flex-direction-nav li a.flex-prev{left:40px;background:url(../images/prev.png) center center no-repeat;}
+.flex-direction-nav li a.flex-prev:hover{left:40px;background:url(../images/prevHover.png) center center no-repeat;}
+
+.flex-direction-nav li a.flex-next{right:40px;background:url(../images/next.png) center center no-repeat;}
+.flex-direction-nav li a.flex-next:hover{right:40px;background:url(../images/nextHover.png) center center no-repeat;}
+
+
+/*2015-5-28  add  唐小莉  内容部分*/
+.content{width:1480px; height:auto; margin:60px auto;}
+.content h3{font-size:22px;}
+.content h3 i{font-size:14px; font-weight:normal; color:#0aa39a; padding-left:10px;}
+.content .sortList{width:1000px; height:80px; margin:30px 0; float:left; overflow:hidden;}
+.content .sortList h4{width:105px; height:40px; background:#dc8b18; text-align:center; line-height:40px; font-size:20px; color:#fff; font-weight:normal; float:left; margin-right:30px;}
+.content .sortList ul{width:865px; height:80px; float:left;}
+.content .sortList ul:after{ content:" "; display:block; clear:both;}
+.content .sortList ul li{width:108px; height:40px; float:left;}
+.content .sortList ul li a{width:108px; height:24px; display:block; margin:8px 0; text-align:center; line-height:24px; font-size:16px; color:#333; font-weight:normal; border-right:1px solid #dc8b18;}
+.content .sortList ul li a:hover,.sortList ul li a.active{color:#dc8b18;}
+.content .search{width:378px; height:38px; float:right; margin:30px 0; background:#fff; border-radius:10px; border:1px solid #ccc;}
+.content .search input{width:295px; height:30px; background:#fff; margin-left:30px; margin-top:4px; outline:none; float:left;}
+.content .search span{width:2px; height:26px; float:left; display:block; background:#ccc; margin:7px 0;}
+.content .search a{width:51px; height:38px; margin:0px 0; float:left; border-radius:0 10px 10px 0;}
+.content .search a img{margin:5px 0 5px 12px;}
+/*2015-5-28  add  唐小莉  产品列表*/
+.goodsList{width:1480px; height:auto;}
+.goodsList ul{width:1480px; height:auto;}
+.goodsList ul:after{ content:" "; display:block; clear:both;}
+.goodsList ul li{width:600px; height:320px; display:block; border:1px solid #067f78; box-shadow:3px 3px 5px #ccc; -webkit-box-shadow:3px 3px 5px #ccc; float:left; margin:0 69px 50px;}
+.goodsList ul li > a{width:260px; height:284px; display:block; float:left; margin:15px 0 15px 15px;}
+.goodsList ul li > a img{width:260px; height:284px;}
+.goodsList ul li .goodsListInfo{width:300px; height:250px; float:left; margin:51px 10px 17px 15px;}
+.goodsList ul li .goodsListInfo h5{font-size:18px; line-height:40px;}
+.goodsList ul li .goodsListInfo span{width:300px; height:48px; display:block; font-size:15px; line-height:24px; overflow:hidden; text-indent:1em;}
+.goodsList ul li .goodsListInfo p{font-size:40px; line-height:100px; padding:0 10px;}
+.goodsList ul li .goodsListInfo p i{font-style:normal; text-decoration:line-through; font-size:24px; color:#ccc; padding-left:20px;}
+.goodsList ul li .goodsListInfo b{width:300px; height:37px; display:block;}
+.goodsList ul li .goodsListInfo b a{width:118px; height:33px; display:block; float:left; background:#dc8b18; border-radius:5px; text-align:center; line-height:33px; border:2px solid #ebe9e9; margin:0 14px; font-size:16px; color:#fff;}
+
+
+
+/*2015-5-28  add  唐小莉  服务列表*/
+.service{width:100%; height:260px; border-top:2px solid #067f78; box-shadow:0 2px 5px #ccc inset; -webkit-box-shadow:0 2px 5px #ccc inset;}
+.service ul{width:1480px; height:260px; margin:auto;}
+.service ul:after{ content:" "; display:block; clear:both;}
+.service ul li{width:370px; height:260px; float:left;}
+.service ul li img{width:112px; height:151px; margin:54px auto; display:block;}
+
+
+
+/*2015-5-28  add  唐小莉  底部*/
+.footer{width:100%; height:125px; background:#0aa39a; text-align:center;}
+.footer p{font-size:15px; color:#fff; line-height:30px;}
+.footer p:first-child{padding-top:33px;}
+
+
+
+/*2015-5-28  add  唐小莉  回到顶部*/
+#back-to-top{position:fixed; display:none; bottom:150px; right:25px; z-index:9999;}
+#back-to-top a:first-child{display:block; width:45px; height:45px; background:url(../images/goTop.png) no-repeat; margin-bottom:8px;}  
+#back-to-top a:first-child:hover{ background:url(../images/goTopHover.png) no-repeat;} 
+ 
+#back-to-top a:last-child{display:block; width:45px; height:45px; background:url(../images/goTopCart.png) no-repeat; position:relative;}  
+#back-to-top a:last-child:hover{ background:url(../images/goTopCartHover.png) no-repeat;}  
+#back-to-top a:last-child span{ background:red; color:#fff; border-radius:5px; padding:2px 5px; font-size:13px; position:absolute; right:0; top:5px;}
+
+
+
+@media screen and (max-width:1366px){
+.headInfo{width:1100px;}
+
+.white_content{top:18%;}
+
+.content{width:1200px;}
+.content .sortList{width:820px; overflow:hidden;}
+.content .search{width:278px;}
+.content .search input{width:195px;}
+.content .search a{width:51px;}
+
+.goodsList{width:1200px;}
+.goodsList ul{width:1200px;}
+.goodsList ul li{width:490px; height:256px; margin:0 54px 60px;}
+.goodsList ul li > a{width:200px; height:224px; margin:15px 0 15px 15px;}
+.goodsList ul li > a img{width:200px; height:224px;}
+.goodsList ul li .goodsListInfo{width:245px; height:225px; margin:15px 10px 17px 20px;}
+.goodsList ul li .goodsListInfo h5{line-height:35px;}
+.goodsList ul li .goodsListInfo span{width:245px;}
+.goodsList ul li .goodsListInfo p{line-height:95px;}
+.goodsList ul li .goodsListInfo b{width:245px;}
+.goodsList ul li .goodsListInfo b a{width:96px; margin:0 10px;}
+
+.service ul{width:1100px;}
+.service ul li{width:275px;}
+	
+}
+
+

@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration:none;
+	font-family: "微软雅黑";
+}
+body{font-size:13px;}
+a{color: #333;}
+a:active{color: #333; cursor: pointer;}
+li{
+	text-decoration:none;
+	list-style:none;
+	}
+.clear{ 
+	clear:both;
+	}
+.header{
+	width:100%;
+	height: 50px;
+	background:e8e9e9;
+}
+.header .logo{
+	width:40%; 
+	float:left;
+	}
+.header .logo img{
+	width:100%;
+	height: 50px;
+	}
+.header .search{
+	width:55%;
+	float:left;
+	}
+.header .search a{
+	width:100%;
+	height: 50px;
+	line-height: 50px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 0 17%;
+	display: inline-block;
+	background: url(../images/point-bg.png) no-repeat center;
+	background-size: 100% 60%;
+	font-size: 12px;
+	}
+
+
+
+.right{float: right; padding-right: 2%; color:#909090; font-size: 14px; font-weight: bold;}
+.sub{display: block; height: 28px; width: 95px; background: #46B9B3; border-radius: 3px; color: #FFFFFF; text-align: center; line-height: 28px; margin: auto;}
+/*swiper.css*/
+.swiper-container {
+    width:100%;
+    height: 200px;
+    overflow: hidden;
+}  
+.swiper-container img {
+	width:100%;
+	height: 100%;
+	}
+/*swiper.css*/
+
+.main{
+	padding-bottom: 45px; 
+	width:98%;
+	margin: auto;
+	}
+.main .title{
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	padding-left: 3%;
+	background:#F7F7F7;
+	margin:2%;
+	border-radius: 5px;
+	}
+.main .title i{font-size: 16px;color: #0AA39A;}
+.infoBox{
+	width:46%;
+	float:left; 
+	padding:2%;
+	}
+.infoBox img{
+	width:100%;
+	transition: all .5s;
+	} 
+.infoBox h2{
+	font-size:13px; 
+	padding-top:10px; 
+	text-align:center;
+	}
+.infoBox p{
+	color:#F30; 
+	font-size:18px; 
+	line-height:25px; 
+	text-align:center;
+	}
+.infoBox .btn a{
+	height:25px; 
+	border:none; 
+	width:100%; 
+	line-height:25px; 
+	color:#FFF; 
+	text-align:center; 
+	font-size:13px;
+	border-radius:5px; 
+	background:#F30; 
+	display:block; 
+	padding:1px;}
+.footer{
+	height:40px;
+	width:100%; 
+	background:#F7F7F7; 
+	bottom:0; 
+	position:fixed; 
+	z-index:11;
+	font-size:12px;
+	
+	}
+.nav {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.nav img {
+	height: 20px;
+	width: 20px;
+	margin:4px;
+}
+.home{background:url(../images/homeIcon.png) no-repeat top 3px center;}
+.list{background: url(../images/list.png) no-repeat top 3px center;}
+.carticon{background: url(../images/cart.png) no-repeat top 3px center;position: relative;}
+.user{background: url(../images/userIcon.png) no-repeat top 3px center;}
+.nav ul li a{padding-top: 11px; color:#666666;}
+.nav ul li ul{
+	background: #F7F7F7;
+	border-radius:5px;
+	width: 25%;
+}
+.nav ul li ul::after{
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 10px solid transparent;
+	border-top: 10px solid #F7F7F7;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+  	margin-left: -10px;
+}
+.imte {
+	
+	width: 25%;
+	height: 40px;
+	line-height: 40px;
+	float: left;
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+	background: #F7F7F7;
+}
+.imte a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.nav-bar1 {
+	list-style: none;
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	width: 20%;
+	transition: all .3s; 
+}
+.nav-bar1.active {
+	bottom: 52px;
+	top: inherit;
+}
+.infoBox a{
+	display: block;
+	position: relative;
+}
+.cartNumber{padding:2px 4px;
+	 line-height: 13px; 
+	 text-align: center; 
+	 border-radius:50%; 
+	 color: #FFFFFF; 
+	 position: absolute;
+	 top: 0; left: 50%; 
+	 background: #B92C13; 
+	 z-index: 999;}
